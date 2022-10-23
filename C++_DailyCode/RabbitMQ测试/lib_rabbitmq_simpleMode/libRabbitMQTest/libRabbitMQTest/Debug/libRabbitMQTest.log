@@ -1,3 +1,0 @@
-﻿  main.cpp
-d:\code\rabbitmq_api_test\lib_rabbitmq_vs2017_win32\include\amqp_tcp_socket.h(7): warning C4081: 应输入“(”；找到“字符串”
-  libRabbitMQTest.vcxproj -> D:\Code\RabbitMQ_API_Test\libRabbitMQTestFunc\libRabbitMQTest\Debug\libRabbitMQTest.exe
