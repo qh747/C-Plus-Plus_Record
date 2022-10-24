@@ -27,6 +27,9 @@
     <ClCompile Include="libRabbitMQTest_PubAndSubMode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="libRabbitMQTest_RouteMode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libRabbitMQTest.h">

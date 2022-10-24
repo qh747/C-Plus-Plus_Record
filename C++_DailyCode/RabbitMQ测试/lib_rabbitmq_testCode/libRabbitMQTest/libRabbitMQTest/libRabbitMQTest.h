@@ -31,3 +31,11 @@ void pubAndSubModeFunc();
 int pubAndSubMode_PublishThreadFunc();
 int pubAndSubMode_ConsumeThreadFunc();
 int pubAndSubMode_SecondConsumeThreadFunc();
+
+/*路由模式    **/
+void routeModeFunc();
+
+int routeMode_PublishThreadFunc();
+int routeMode_ErrorConsumeThreadFunc();
+int routeMode_WarnConsumeThreadFunc();
+int routeMode_InfoConsumeThreadFunc();
