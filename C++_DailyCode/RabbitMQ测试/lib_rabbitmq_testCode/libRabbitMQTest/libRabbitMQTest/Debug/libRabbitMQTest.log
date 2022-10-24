@@ -2,4 +2,17 @@
 d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_pubandsubmode.cpp(98): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
 d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_pubandsubmode.cpp(186): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
 d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_pubandsubmode.cpp(263): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+  libRabbitMQTest_RouteMode.cpp
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_routemode.cpp(119): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_routemode.cpp(133): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_routemode.cpp(147): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_routemode.cpp(225): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_routemode.cpp(302): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_routemode.cpp(380): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+  libRabbitMQTest_SimpleMode.cpp
+  libRabbitMQTest_WorkQueueMode.cpp
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_workqueuemode.cpp(94): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+d:\code\vsc++2022file\c-plus-plus_record\c++_dailycode\rabbitmq测试\lib_rabbitmq_testcode\librabbitmqtest\librabbitmqtest\librabbitmqtest_workqueuemode.cpp(181): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::thread::id”
+  main.cpp
+  正在生成代码...
   libRabbitMQTest.vcxproj -> D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_testCode\libRabbitMQTest\Debug\libRabbitMQTest.exe

@@ -126,6 +126,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="libRabbitMQTest_PubAndSubMode.cpp" />
+    <ClCompile Include="libRabbitMQTest_RouteMode.cpp" />
     <ClCompile Include="libRabbitMQTest_SimpleMode.cpp" />
     <ClCompile Include="libRabbitMQTest_WorkQueueMode.cpp" />
     <ClCompile Include="main.cpp" />

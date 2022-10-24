@@ -11,7 +11,10 @@ int main()
 	//workQueueModeFunc();
 
 	/*发布/订阅者模式    **/
-	pubAndSubModeFunc();
+	//pubAndSubModeFunc();
+
+	/*路由模式    **/
+	routeModeFunc();
 
 	return 0;
 }
