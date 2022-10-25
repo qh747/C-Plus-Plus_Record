@@ -14,7 +14,10 @@ int main()
 	//pubAndSubModeFunc();
 
 	/*路由模式    **/
-	routeModeFunc();
+	//routeModeFunc();
+
+	/*主题模式    **/
+	topicModeFunc();
 
 	return 0;
 }
