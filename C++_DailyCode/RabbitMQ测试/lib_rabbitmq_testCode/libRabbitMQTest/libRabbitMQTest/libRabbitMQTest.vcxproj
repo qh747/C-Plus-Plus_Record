@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClCompile Include="libRabbitMQTest_PubAndSubMode.cpp" />
     <ClCompile Include="libRabbitMQTest_RouteMode.cpp" />
+    <ClCompile Include="libRabbitMQTest_RpcMode.cpp" />
     <ClCompile Include="libRabbitMQTest_SimpleMode.cpp" />
     <ClCompile Include="libRabbitMQTest_TopicMode.cpp" />
     <ClCompile Include="libRabbitMQTest_WorkQueueMode.cpp" />

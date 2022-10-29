@@ -17,7 +17,10 @@ int main()
 	//routeModeFunc();
 
 	/*主题模式    **/
-	topicModeFunc();
+	//topicModeFunc();
+
+	/*RPC模式    **/
+	rpcModeFunc();
 
 	return 0;
 }

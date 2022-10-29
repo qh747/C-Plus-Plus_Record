@@ -8,9 +8,9 @@
 #include <mutex>
 #include <Windows.h>
 #include <sstream>
+#include <assert.h>
 #include "amqp.h"
 #include "amqp_tcp_socket.h"
-
 using namespace std;
 
 /*简单模式    **/
@@ -41,3 +41,9 @@ void topicModeFunc();
 int  topicMode_PublishThreadFunc();
 int  topicMode_FirstConsumeThreadFunc();
 int  topicMode_SecondConsumeThreadFunc();
+
+/*RPC模式    **/
+void rpcModeFunc();
+int  rpcMode_ClientThreadFunc();
+int  rpcMode_serverThreadFunc();
+void rpcMode_showMessageContent(void const *buffer, size_t len);
