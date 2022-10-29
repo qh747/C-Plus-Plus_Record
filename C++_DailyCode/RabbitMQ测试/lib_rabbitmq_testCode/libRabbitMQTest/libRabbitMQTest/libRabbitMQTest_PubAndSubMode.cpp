@@ -4,10 +4,10 @@
 int PUBANDSUB_MODE_PUBLISH_THREAD_RESULT = 0;
 
 /*接收者线程返回值    **/
-int PUBANDSUB_MODEL_CONSUME_THREAD_RESULT = 0;
+int PUBANDSUB_MODE_CONSUME_THREAD_RESULT = 0;
 
 /*第二个接收者线程返回值    **/
-int PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT = 0;
+int PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT = 0;
 
 void pubAndSubModeFunc()
 {
@@ -29,8 +29,8 @@ void pubAndSubModeFunc()
 	printf("\n************** RABBITMQ PUBLISH AND SUBSCRBE MODE FUNC END *************\n\n");
 
 	printf("Publish Thread Result: %d\n", PUBANDSUB_MODE_PUBLISH_THREAD_RESULT);
-	printf("Consume Thread Result: %d\n", PUBANDSUB_MODEL_CONSUME_THREAD_RESULT);
-	printf("Second Consume Thread Result: %d\n", PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT);
+	printf("Consume Thread Result: %d\n", PUBANDSUB_MODE_CONSUME_THREAD_RESULT);
+	printf("Second Consume Thread Result: %d\n", PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT);
 }
 
 int pubAndSubMode_PublishThreadFunc()
@@ -134,32 +134,32 @@ int pubAndSubMode_ConsumeThreadFunc()
 	amqp_connection_state_t pConn = amqp_new_connection();
 	if (NULL == pConn)
 	{
-		PUBANDSUB_MODEL_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_CONSUME_THREAD_RESULT;
 	}
 
 	/*创建与RabbitMQ Server通信的socket    **/
 	amqp_socket_t* pSocket = amqp_tcp_socket_new(pConn);
 	if (NULL == pSocket)
 	{
-		PUBANDSUB_MODEL_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_CONSUME_THREAD_RESULT;
 	}
 
 	/*打开与RabbitMQ Server通信的socket    **/
 	int openSocketRet = amqp_socket_open(pSocket, "192.168.0.188", 5672);
 	if (AMQP_STATUS_OK != openSocketRet)
 	{
-		PUBANDSUB_MODEL_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_CONSUME_THREAD_RESULT;
 	}
 
 	/*登录RabbitMQ Server    **/
 	amqp_rpc_reply_t loginRet = amqp_login(pConn, "qhVHost", AMQP_DEFAULT_MAX_CHANNELS, AMQP_DEFAULT_FRAME_SIZE, 0, AMQP_SASL_METHOD_PLAIN, "quhan", "qhmm19971120");
 	if (AMQP_RESPONSE_NORMAL != loginRet.reply_type)
 	{
-		PUBANDSUB_MODEL_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_CONSUME_THREAD_RESULT;
 	}
 
 	/*打开通信管道    **/
@@ -201,8 +201,8 @@ int pubAndSubMode_ConsumeThreadFunc()
 	/*销毁与RabbitMQ Server的连接    **/
 	amqp_destroy_connection(pConn);
 
-	PUBANDSUB_MODEL_CONSUME_THREAD_RESULT = 1;
-	return PUBANDSUB_MODEL_CONSUME_THREAD_RESULT;
+	PUBANDSUB_MODE_CONSUME_THREAD_RESULT = 1;
+	return PUBANDSUB_MODE_CONSUME_THREAD_RESULT;
 }
 
 int pubAndSubMode_SecondConsumeThreadFunc()
@@ -211,32 +211,32 @@ int pubAndSubMode_SecondConsumeThreadFunc()
 	amqp_connection_state_t pConn = amqp_new_connection();
 	if (NULL == pConn)
 	{
-		PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT;
 	}
 
 	/*创建与RabbitMQ Server通信的socket    **/
 	amqp_socket_t* pSocket = amqp_tcp_socket_new(pConn);
 	if (NULL == pSocket)
 	{
-		PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT;
 	}
 
 	/*打开与RabbitMQ Server通信的socket    **/
 	int openSocketRet = amqp_socket_open(pSocket, "192.168.0.188", 5672);
 	if (AMQP_STATUS_OK != openSocketRet)
 	{
-		PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT;
 	}
 
 	/*登录RabbitMQ Server    **/
 	amqp_rpc_reply_t loginRet = amqp_login(pConn, "qhVHost", AMQP_DEFAULT_MAX_CHANNELS, AMQP_DEFAULT_FRAME_SIZE, 0, AMQP_SASL_METHOD_PLAIN, "quhan", "qhmm19971120");
 	if (AMQP_RESPONSE_NORMAL != loginRet.reply_type)
 	{
-		PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT = -1;
-		return PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT;
+		PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT = -1;
+		return PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT;
 	}
 
 	/*打开通信管道    **/
@@ -278,6 +278,6 @@ int pubAndSubMode_SecondConsumeThreadFunc()
 	/*销毁与RabbitMQ Server的连接    **/
 	amqp_destroy_connection(pConn);
 
-	PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT = 1;
-	return PUBANDSUB_MODEL_SECOND_CONSUME_THREAD_RESULT;
+	PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT = 1;
+	return PUBANDSUB_MODE_SECOND_CONSUME_THREAD_RESULT;
 }

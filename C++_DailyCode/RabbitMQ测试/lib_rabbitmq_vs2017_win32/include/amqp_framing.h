@@ -5,7 +5,7 @@
 #ifndef AMQP_FRAMING_H
 #define AMQP_FRAMING_H
 
-#warning "amqp_framing.h is deprecated, use rabbitmq-c/framing.h instead.
+//#warning "amqp_framing.h is deprecated, use rabbitmq-c/framing.h instead.
 
 #include <rabbitmq-c/framing.h>
 
