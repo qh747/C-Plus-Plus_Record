@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	/*简单模式测试    **/
-	//simpleModeFunc();     
+	simpleModeFunc();     
 
 	/*工作队列模式    **/
 	//workQueueModeFunc();
@@ -20,7 +20,7 @@ int main()
 	//topicModeFunc();
 
 	/*RPC模式    **/
-	rpcModeFunc();
+	//rpcModeFunc();
 
 	return 0;
 }

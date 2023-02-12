@@ -46,4 +46,4 @@ int  topicMode_SecondConsumeThreadFunc();
 void rpcModeFunc();
 int  rpcMode_ClientThreadFunc();
 int  rpcMode_serverThreadFunc();
-void rpcMode_showMessageContent(void const *buffer, size_t len);
+
