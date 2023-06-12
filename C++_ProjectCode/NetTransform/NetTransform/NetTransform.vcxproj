@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\include\protobuf_lib\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -91,7 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Code\MyLibrary\ProtoBuf\protobuf_lib\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
