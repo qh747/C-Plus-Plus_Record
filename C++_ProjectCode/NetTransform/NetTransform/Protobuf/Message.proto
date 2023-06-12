@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message RequestMessage
+{
+    int32   cmdType    = 1;
+    bytes   clientId   = 2;
+    bytes   serverId   = 3;
+    bytes   sign       = 4;
+    bytes   data       = 5;
+}
+
+message ResponseMessage
+{
+    bool  status       = 1;
+    int32 seckeyId     = 2;
+    bytes clientId     = 3;
+    bytes serverId     = 4;
+    bytes data         = 5;
+}
+

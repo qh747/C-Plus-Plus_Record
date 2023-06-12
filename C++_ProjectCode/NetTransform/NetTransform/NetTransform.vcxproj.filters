@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Protobuf">
+      <UniqueIdentifier>{09826a7f-1898-4af6-aad5-6dea3370c9ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protobuf\Source Files">
+      <UniqueIdentifier>{6a41b3d5-5506-452a-850b-a78bfa49d1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protobuf\Head Files">
+      <UniqueIdentifier>{535692bc-0ef5-4347-99dd-18d8e1b135aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protobuf\Other Files">
+      <UniqueIdentifier>{e31d662c-1e64-4005-8219-bd155658cee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Test Files\Head Files">
+      <UniqueIdentifier>{c99ecaa3-d1a9-446d-a670-bb00f8ec4d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Source Files">
+      <UniqueIdentifier>{539370b3-f818-4c2b-8acd-e2e21c1e2158}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Message.pb.cc">
+      <Filter>Protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Codec.cpp">
+      <Filter>Protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Request.cpp">
+      <Filter>Protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Response.cpp">
+      <Filter>Protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncTest\FuncTest.cpp">
+      <Filter>Test Files\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Protobuf\ProtobufDataDef.h">
+      <Filter>Protobuf\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Message.pb.h">
+      <Filter>Protobuf\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Codec.h">
+      <Filter>Protobuf\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Request.h">
+      <Filter>Protobuf\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Response.h">
+      <Filter>Protobuf\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncTest\FuncTest.h">
+      <Filter>Test Files\Head Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Protobuf\Message.proto">
+      <Filter>Protobuf\Other Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
