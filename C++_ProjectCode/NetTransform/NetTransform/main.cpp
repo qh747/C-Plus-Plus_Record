@@ -3,7 +3,7 @@
 using namespace std;
 
 /*当前测试模块标识宏							**/
-#define CURRENT_TEST_FLAG 1
+#define CURRENT_TEST_FLAG 2
 
 int main()
 {
@@ -16,6 +16,13 @@ int main()
 	funcModelResponseCodecTest();
 
 #endif // 1 == CURRENT_TEST_FLAG
+
+#if 2 == CURRENT_TEST_FLAG
+
+	/*Socket模块测试						**/
+	funcThreadSocketTest();
+
+#endif // 2 == CURRENT_TEST_FLAG
 
 	return 0;
 }

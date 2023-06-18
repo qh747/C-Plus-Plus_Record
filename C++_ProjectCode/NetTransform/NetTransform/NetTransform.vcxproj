@@ -135,6 +135,9 @@
     <ClCompile Include="Protobuf\Message.pb.cc" />
     <ClCompile Include="Protobuf\Request.cpp" />
     <ClCompile Include="Protobuf\Response.cpp" />
+    <ClCompile Include="Socket\TcpServer.cpp" />
+    <ClCompile Include="Socket\TcpSocket.cpp" />
+    <ClCompile Include="ThreadPool\ThreadPool.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncTest\FuncTest.h" />
@@ -143,6 +146,9 @@
     <ClInclude Include="Protobuf\ProtobufDataDef.h" />
     <ClInclude Include="Protobuf\Request.h" />
     <ClInclude Include="Protobuf\Response.h" />
+    <ClInclude Include="Socket\TcpServer.h" />
+    <ClInclude Include="Socket\TcpSocket.h" />
+    <ClInclude Include="ThreadPool\ThreadPool.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Protobuf\Message.proto" />

@@ -31,6 +31,24 @@
     <Filter Include="Test Files\Source Files">
       <UniqueIdentifier>{539370b3-f818-4c2b-8acd-e2e21c1e2158}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ThreadPool">
+      <UniqueIdentifier>{792488f2-e442-49bc-a83b-efebe4e58cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool\Head Files">
+      <UniqueIdentifier>{33979fce-5807-4e88-bfbe-2ed69deb64bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool\Source Files">
+      <UniqueIdentifier>{4b509ef9-a65e-4171-bc56-d77e4ed6b090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{1a6dea10-210c-4598-8a24-72df0c584034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\Head Files">
+      <UniqueIdentifier>{93582602-99a8-412d-87c6-832455fd0d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\Source Files">
+      <UniqueIdentifier>{bb649870-56ef-4248-bc83-df96316392ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +69,15 @@
     <ClCompile Include="FuncTest\FuncTest.cpp">
       <Filter>Test Files\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ThreadPool\ThreadPool.cpp">
+      <Filter>ThreadPool\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket\TcpServer.cpp">
+      <Filter>Socket\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket\TcpSocket.cpp">
+      <Filter>Socket\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Protobuf\ProtobufDataDef.h">
@@ -70,6 +97,15 @@
     </ClInclude>
     <ClInclude Include="FuncTest\FuncTest.h">
       <Filter>Test Files\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool\ThreadPool.h">
+      <Filter>ThreadPool\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\TcpServer.h">
+      <Filter>Socket\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\TcpSocket.h">
+      <Filter>Socket\Head Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
