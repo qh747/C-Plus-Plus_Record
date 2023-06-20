@@ -1,9 +1,6 @@
 #pragma once 
-#include <WinSock2.h>
-#pragma comment(lib, "ws2_32.lib")
 #include "TcpSocket.h"
-#include <ctime>
-
+/*TCP ·þÎñ¶Ë															**/
 class TcpServer
 {
 public:

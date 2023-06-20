@@ -10,7 +10,7 @@
 #include <cstdlib>
 using std::string;
 
-/*TCP套接字，用于服务端与客户端通信，支持服务端、客户端使用				**/
+/*TCP套接字，用于服务端与客户端通信，支持服务端、客户端使用									**/
 class TcpSocket
 {
 public:
@@ -30,6 +30,8 @@ private:
 	int		recvBytes(void* pRecvBuf, int recvSize);										// 接收n字节数据
 	int		sendBytes(void* pSendBuf, int sendSize);										// 发送n字节数据
 
+	bool	isSockValid();																	// 判断socket是否有效
+
 private:
-	SOCKET m_sock;
+	SOCKET m_sock;																			// socket通信套接字
 };

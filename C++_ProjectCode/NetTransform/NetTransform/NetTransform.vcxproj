@@ -131,6 +131,7 @@
   <ItemGroup>
     <ClCompile Include="FuncTest\FuncTest.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryShare\MemoryShare.cpp" />
     <ClCompile Include="Protobuf\Codec.cpp" />
     <ClCompile Include="Protobuf\Message.pb.cc" />
     <ClCompile Include="Protobuf\Request.cpp" />
@@ -141,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncTest\FuncTest.h" />
+    <ClInclude Include="MemoryShare\MemoryShare.h" />
     <ClInclude Include="Protobuf\Codec.h" />
     <ClInclude Include="Protobuf\Message.pb.h" />
     <ClInclude Include="Protobuf\ProtobufDataDef.h" />

@@ -1,6 +1,15 @@
 #include "FuncTest.h"
 
-/*Request_Codec模块测试						**/
+/*编解码模块测试							**/
+void funcThreadCodecTest()
+{
+	thread reqCodecThread(funcModelRequestCodecTest);
+	thread respCodecThread(funcModelResponseCodecTest);
+
+	reqCodecThread.join();
+	respCodecThread.join();
+}
+
 void funcModelRequestCodecTest()
 {
 	/*请求消息初始化						**/
@@ -29,7 +38,6 @@ void funcModelRequestCodecTest()
 	delete pDstMsg;
 }
 
-/*Response_Codec模块测试					**/
 void funcModelResponseCodecTest()
 {
 	/*响应消息初始化						**/
@@ -56,6 +64,7 @@ void funcModelResponseCodecTest()
 	cout << "RESPONSE DEST MSG:" << " " << pDstMsg->status << " " << pDstMsg->clientId << " " << pDstMsg->serverId << " " << pDstMsg->seckeyId << " " << pDstMsg->data << endl << endl;
 	delete pDstMsg;
 }
+
 
 /*Socket模块测试							**/
 void funcThreadSocketTest()
@@ -131,4 +140,41 @@ void funcModelTcpClientTest()
 	clientSock.sendMessage(exitBuf, strlen(exitBuf), 2);
 
 	return;
+}
+
+
+/*共享内存模块测试							**/
+void funcMemoryShareTest()
+{
+	thread writeThread(funcModelMemoryShareWriteTest);
+	thread readThread(funcModelMemoryShareReadTest);
+
+	writeThread.join();
+	readThread.join();
+}
+
+void funcModelMemoryShareWriteTest()
+{
+	MemoryShare writeMemory;
+	bool allocateResult = writeMemory.allocateMemory(1, "SHARE_MEMORY", 1024, 1);
+	if (false == allocateResult)
+		return;
+
+	char sendBuf[16] = "hello world.";
+	DWORD writeSize = writeMemory.writeData(1, sendBuf, strlen(sendBuf), 0, 1);
+	if (0 != writeSize)
+		cout << "Write Thread Write Data Success. Data: hello world. Size: " << writeSize << endl;
+}
+
+void funcModelMemoryShareReadTest()
+{
+	MemoryShare readMemory;
+	Sleep(2 * 1000);
+
+	char recvBuf[16] = "\0";
+	DWORD readSize = readMemory.readData(1, recvBuf, sizeof(recvBuf), 0, 2);
+	recvBuf[strlen(recvBuf)] = '\0';
+
+	if (0 != readSize)
+		cout << "Read Thread Read Data Success. Data: " << recvBuf << " Size: " << readSize << endl;
 }

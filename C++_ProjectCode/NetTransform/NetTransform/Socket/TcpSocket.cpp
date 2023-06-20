@@ -7,6 +7,7 @@ TcpSocket::TcpSocket()
 	if (0 != WSAStartup(MAKEWORD(2, 2), &sockEnvir))
 	{
 		std::cerr << "SOCKET ENVIR INIT FAILED. ERR CODE: " << WSAGetLastError() << std::endl;
+		m_sock = INVALID_SOCKET;
 		return;
 	}
 		
@@ -42,14 +43,14 @@ TcpSocket::TcpSocket(SOCKET servSock)
 {
 	if (INVALID_SOCKET == servSock)
 		std::cerr << "SOCKET ASSIGN FAILED." << std::endl;
-	else
-		m_sock = servSock;
+	
+	m_sock = servSock;
 }
 
 int	TcpSocket::connectServer(const string& ip, unsigned short port, unsigned long timeout)
 {
 	/*函数入参有效性检查							**/
-	if (true == ip.empty() || port <= 0 || timeout <= 0)
+	if (true == ip.empty() || port <= 0 || timeout <= 0 || false == this->isSockValid())
 	{
 		std::cout << "FUNC INPUT PARAM ERROR, FUNC NAME: connectServer() " << std::endl;
 		return -1;
@@ -117,7 +118,7 @@ int	TcpSocket::connectServer(const string& ip, unsigned short port, unsigned lon
 int TcpSocket::sendMessage(void* pMsgBody, int msgBodySize, unsigned long timeout)
 {
 	/*函数入参有效性检查											**/
-	if (NULL == pMsgBody || msgBodySize <= 0 || timeout <= 0)
+	if (NULL == pMsgBody || msgBodySize <= 0 || timeout <= 0 || false == this->isSockValid())
 	{
 		std::cout << "FUNC INPUT PARAM ERROR, FUNC NAME: sendMessage() " << std::endl;
 		return -1;
@@ -147,7 +148,7 @@ int TcpSocket::sendMessage(void* pMsgBody, int msgBodySize, unsigned long timeou
 int TcpSocket::recvMessage(void* pMsgBody, int msgBodySize, unsigned long timeout)
 {
 	/*函数入参有效性检查								**/
-	if (NULL == pMsgBody || msgBodySize <= 0 || timeout <= 0)
+	if (NULL == pMsgBody || msgBodySize <= 0 || timeout <= 0 || false == this->isSockValid())
 	{
 		std::cout << "FUNC INPUT PARAM ERROR, FUNC NAME: recvMessage() " << std::endl;
 		return -1;
@@ -259,4 +260,12 @@ int TcpSocket::sendBytes(void* pSendBuf, int sendSize)
 	}
 
 	return curSendSize;
+}
+
+bool TcpSocket::isSockValid()
+{
+	if (INVALID_SOCKET == m_sock)
+		return false;
+	else
+		return true;
 }

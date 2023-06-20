@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Protobuf">
       <UniqueIdentifier>{09826a7f-1898-4af6-aad5-6dea3370c9ba}</UniqueIdentifier>
     </Filter>
@@ -49,6 +45,15 @@
     <Filter Include="Socket\Source Files">
       <UniqueIdentifier>{bb649870-56ef-4248-bc83-df96316392ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MemoryShare">
+      <UniqueIdentifier>{63514fc9-3d4b-4093-9fab-39739f4d3c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryShare\Head Files">
+      <UniqueIdentifier>{fc018eba-3143-4a8f-89e6-bf9714fdc16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryShare\Source Files">
+      <UniqueIdentifier>{61805c48-32d3-4640-98c6-f7d6e4dc6d0f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -78,6 +83,9 @@
     <ClCompile Include="Socket\TcpSocket.cpp">
       <Filter>Socket\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MemoryShare\MemoryShare.cpp">
+      <Filter>MemoryShare\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Protobuf\ProtobufDataDef.h">
@@ -106,6 +114,9 @@
     </ClInclude>
     <ClInclude Include="Socket\TcpSocket.h">
       <Filter>Socket\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryShare\MemoryShare.h">
+      <Filter>MemoryShare\Head Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

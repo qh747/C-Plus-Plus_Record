@@ -4,17 +4,22 @@
 #include "../Protobuf/Response.h"
 #include "../Socket/TcpServer.h"
 #include "../Socket/TcpSocket.h"
+#include "../MemoryShare/MemoryShare.h"
 #include <Windows.h>
 #include <cstdio>
 using namespace std;
 
-/*Request_Codec模块测试						**/
+/*编解码模块测试							**/
+void funcThreadCodecTest();
 void funcModelRequestCodecTest();
-
-/*Response_Codec模块测试					**/
 void funcModelResponseCodecTest();
 
 /*Socket模块测试							**/
 void funcThreadSocketTest();
 void funcModelTcpServerTest();
 void funcModelTcpClientTest();
+
+/*共享内存模块测试							**/
+void funcMemoryShareTest();
+void funcModelMemoryShareWriteTest();
+void funcModelMemoryShareReadTest();
