@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\include;D:\Code\MyLibrary\OpenSSL_bin\OpenSSL-Win64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\lib;D:\Code\MyLibrary\OpenSSL_bin\OpenSSL-Win64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -95,7 +95,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>libprotobufd.lib;libprotobuf-lited.lib;libprotocd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libprotobufd.lib;libprotobuf-lited.lib;libprotocd.lib;libssl.lib;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -130,8 +130,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FuncTest\FuncTest.cpp" />
+    <ClCompile Include="FuncTest\LibApiTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MemoryShare\MemoryShare.cpp" />
+    <ClCompile Include="OpenSSL\Encrypt.cpp" />
     <ClCompile Include="Protobuf\Codec.cpp" />
     <ClCompile Include="Protobuf\Message.pb.cc" />
     <ClCompile Include="Protobuf\Request.cpp" />
@@ -142,7 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncTest\FuncTest.h" />
+    <ClInclude Include="FuncTest\LibApiTest.h" />
     <ClInclude Include="MemoryShare\MemoryShare.h" />
+    <ClInclude Include="OpenSSL\Encrypt.h" />
     <ClInclude Include="Protobuf\Codec.h" />
     <ClInclude Include="Protobuf\Message.pb.h" />
     <ClInclude Include="Protobuf\ProtobufDataDef.h" />

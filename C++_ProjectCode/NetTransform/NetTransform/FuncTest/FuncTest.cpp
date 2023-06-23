@@ -148,9 +148,11 @@ void funcMemoryShareTest()
 {
 	thread writeThread(funcModelMemoryShareWriteTest);
 	thread readThread(funcModelMemoryShareReadTest);
+	thread secReadThread(funcModelMemoryShareReadTest);
 
 	writeThread.join();
 	readThread.join();
+	secReadThread.join();
 }
 
 void funcModelMemoryShareWriteTest()
@@ -160,21 +162,104 @@ void funcModelMemoryShareWriteTest()
 	if (false == allocateResult)
 		return;
 
-	char sendBuf[16] = "hello world.";
-	DWORD writeSize = writeMemory.writeData(1, sendBuf, strlen(sendBuf), 0, 1);
-	if (0 != writeSize)
-		cout << "Write Thread Write Data Success. Data: hello world. Size: " << writeSize << endl;
+	char sendBuf[20] = "hello world.";
+	while (true)
+	{
+		DWORD writeSize = writeMemory.writeData(1, sendBuf, strlen(sendBuf), 0, 1);
+		if (0 != writeSize)
+		{
+			printf("Write Thread Write Data Success. Data: %s. Size: %lu\n", sendBuf, writeSize);
+			break;
+		}
+	}
+	
+	Sleep(0.5 * 1000);
+	while (true)
+	{
+		bool clearResult = writeMemory.clearMemory(1, 0, strlen(sendBuf), 1);
+		if (true == clearResult)
+		{
+			memset(sendBuf, 0, sizeof(sendBuf));
+			strcpy(sendBuf, "hello share memory");
+			break;
+		}
+	}
+
+	while (true)
+	{
+		DWORD writeSize = writeMemory.writeData(1, sendBuf, strlen(sendBuf), 0, 1);
+		if (0 != writeSize)
+		{
+			printf("Write Thread Write Data Success. Data: %s. Size: %lu\n", sendBuf, writeSize);
+			break;
+		}
+	}
 }
 
 void funcModelMemoryShareReadTest()
 {
 	MemoryShare readMemory;
-	Sleep(2 * 1000);
 
-	char recvBuf[16] = "\0";
-	DWORD readSize = readMemory.readData(1, recvBuf, sizeof(recvBuf), 0, 2);
-	recvBuf[strlen(recvBuf)] = '\0';
+	char recvBuf[20] = "\0";
+	int readCount = 0;
+	while (true)
+	{
+		DWORD readSize = readMemory.readData(1, recvBuf, sizeof(recvBuf), 0, 1);
+		if (0 != readSize)
+		{
+			recvBuf[strlen(recvBuf)] = '\0';
+			printf("Read Thread Read Data Success. Data: %s Size: %d\n", recvBuf, strlen(recvBuf));
+			++readCount;
+		}
 
-	if (0 != readSize)
-		cout << "Read Thread Read Data Success. Data: " << recvBuf << " Size: " << readSize << endl;
+		Sleep(1 * 1000);
+
+		if (readCount >= 2)
+			break;
+	}
+}
+
+
+/*º”√‹ƒ£øÈ≤‚ ‘								**/
+void funcEncryptTest()
+{
+	/*MD5º”√‹≤‚ ‘							**/
+	Encrypt MD5Encrypt(Encrypt::TYPE_MD5);
+	MD5Encrypt.addOriginalData("this is ", strlen("this is "));
+	MD5Encrypt.addOriginalData("a test ", strlen("a test "));
+	MD5Encrypt.addOriginalData("of MD5.", strlen("of MD5."));
+
+	cout << "SRC DATA: " << "this is a test of MD5." << endl;
+	cout << "DST SIZE: " << strlen(MD5Encrypt.getEncryptHexData().c_str()) << endl;
+	cout << "DST DATA: " << MD5Encrypt.getEncryptHexData() << endl << endl;
+
+	/*SHA1º”√‹≤‚ ‘							**/
+	Encrypt SHA1Encrypt(Encrypt::TYPE_SHA1);
+	SHA1Encrypt.addOriginalData("this is ", strlen("this is "));
+	SHA1Encrypt.addOriginalData("a test ", strlen("a test "));
+	SHA1Encrypt.addOriginalData("of SHA1.", strlen("of SHA1."));
+
+	cout << "SRC DATA: " << "this is a test of SHA1." << endl;
+	cout << "DST SIZE: " << strlen(SHA1Encrypt.getEncryptHexData().c_str()) << endl;
+	cout << "DST DATA: " << SHA1Encrypt.getEncryptHexData() << endl << endl;
+
+	/*SHA224º”√‹≤‚ ‘						**/
+	Encrypt SHA224Encrypt(Encrypt::TYPE_SHA224);
+	SHA224Encrypt.addOriginalData("this is ", strlen("this is "));
+	SHA224Encrypt.addOriginalData("a test ", strlen("a test "));
+	SHA224Encrypt.addOriginalData("of SHA224.", strlen("of SHA224."));
+
+	cout << "SRC DATA: " << "this is a test of SHA224." << endl;
+	cout << "DST SIZE: " << strlen(SHA224Encrypt.getEncryptHexData().c_str()) << endl;
+	cout << "DST DATA: " << SHA224Encrypt.getEncryptHexData() << endl << endl;
+
+	/*SHA384º”√‹≤‚ ‘						**/
+	Encrypt SHA384Encrypt(Encrypt::TYPE_SHA384);
+	SHA384Encrypt.addOriginalData("this is ", strlen("this is "));
+	SHA384Encrypt.addOriginalData("a test ", strlen("a test "));
+	SHA384Encrypt.addOriginalData("of SHA384.", strlen("of SHA384."));
+
+	cout << "SRC DATA: " << "this is a test of SHA384." << endl;
+	cout << "DST SIZE: " << strlen(SHA384Encrypt.getEncryptHexData().c_str()) << endl;
+	cout << "DST DATA: " << SHA384Encrypt.getEncryptHexData() << endl << endl;
 }

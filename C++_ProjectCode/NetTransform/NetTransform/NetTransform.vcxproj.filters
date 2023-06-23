@@ -54,6 +54,15 @@
     <Filter Include="MemoryShare\Source Files">
       <UniqueIdentifier>{61805c48-32d3-4640-98c6-f7d6e4dc6d0f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="OpenSSL">
+      <UniqueIdentifier>{97dd7255-df30-49b7-b476-ba8b748292f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenSSL\Head Files">
+      <UniqueIdentifier>{7c45774d-320d-4519-8a32-cdea8199db75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenSSL\Source Files">
+      <UniqueIdentifier>{9d3d68bf-774a-4cbb-abfd-f902a84afde2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -86,6 +95,12 @@
     <ClCompile Include="MemoryShare\MemoryShare.cpp">
       <Filter>MemoryShare\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FuncTest\LibApiTest.cpp">
+      <Filter>Test Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenSSL\Encrypt.cpp">
+      <Filter>OpenSSL\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Protobuf\ProtobufDataDef.h">
@@ -117,6 +132,12 @@
     </ClInclude>
     <ClInclude Include="MemoryShare\MemoryShare.h">
       <Filter>MemoryShare\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncTest\LibApiTest.h">
+      <Filter>Test Files\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenSSL\Encrypt.h">
+      <Filter>OpenSSL\Head Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -23,8 +23,8 @@ MemoryShare::~MemoryShare()
 {
 	if (false == this->getMemoryShareState())
 		return;
-
-	MemoryShare::REDUCEMemoryShareObject();
+	else
+		MemoryShare::REDUCEMemoryShareObject();
 }
 
 bool MemoryShare::allocateMemory(int id, const char* name, DWORD size, double sec)

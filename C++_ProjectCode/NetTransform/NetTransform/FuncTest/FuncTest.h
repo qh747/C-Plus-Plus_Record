@@ -5,6 +5,7 @@
 #include "../Socket/TcpServer.h"
 #include "../Socket/TcpSocket.h"
 #include "../MemoryShare/MemoryShare.h"
+#include "../OpenSSL/Encrypt.h"
 #include <Windows.h>
 #include <cstdio>
 using namespace std;
@@ -23,3 +24,6 @@ void funcModelTcpClientTest();
 void funcMemoryShareTest();
 void funcModelMemoryShareWriteTest();
 void funcModelMemoryShareReadTest();
+
+/*º”√‹ƒ£øÈ≤‚ ‘								**/
+void funcEncryptTest();
