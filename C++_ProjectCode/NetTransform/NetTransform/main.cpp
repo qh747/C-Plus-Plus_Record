@@ -4,7 +4,7 @@
 using namespace std;
 
 /*µ±«∞≤‚ ‘ƒ£øÈ±Í ∂∫Í							**/
-#define CURRENT_TEST_FLAG						6
+#define CURRENT_TEST_FLAG						15
 
 int main()
 {
@@ -44,5 +44,61 @@ int main()
 #endif
 	
 
+#if 7 == CURRENT_TEST_FLAG
+	/*OpenSSL RSA API≤‚ ‘						**/
+	funcOpensslRsaSaveApiTest();
+#endif
+	
+
+#if 8 == CURRENT_TEST_FLAG
+	/*OpenSSL RSA API≤‚ ‘						**/
+	funcOpensslRsaBIOSaveApiTest();
+#endif
+
+
+#if 9 == CURRENT_TEST_FLAG
+	/*OpenSSL RSA API≤‚ ‘						**/
+	funcOpensslRsaSaveApiTest();
+	funcOpensslRsaEnCodeApiTest();
+#endif
+	
+
+#if 10 == CURRENT_TEST_FLAG
+	/*OpenSSL RSA API≤‚ ‘						**/
+	funcOpensslRsaVertifyApiTest();
+#endif
+
+
+#if 11 == CURRENT_TEST_FLAG
+	/*OpenSSL AES API≤‚ ‘						**/
+	funcOpensslAesApiTest();
+#endif
+	
+
+#if 12 == CURRENT_TEST_FLAG
+	/*JsonCpp –¥Œƒº˛ API≤‚ ‘					**/
+	funcJsonCppOfstreamWriteFileApiTest();
+#endif
+
+
+#if 13 == CURRENT_TEST_FLAG
+	/*JsonCpp –¥Œƒº˛ API≤‚ ‘					**/
+	funcJsonCppFastWriterWriteFileApiTest();
+#endif
+
+
+#if 14 == CURRENT_TEST_FLAG
+	/*JsonCpp ∂¡Œƒº˛ API≤‚ ‘					**/
+	funcJsonCppReadFileApiTest();
+#endif
+	
+
+#if 15 == CURRENT_TEST_FLAG
+	/*OpenSSL Base64 API≤‚ ‘					**/
+	funcOpensslBase64ApiTest();
+#endif
+
+	
+	
 	return 0;
 }

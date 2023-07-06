@@ -65,7 +65,6 @@ void funcModelResponseCodecTest()
 	delete pDstMsg;
 }
 
-
 /*Socket模块测试							**/
 void funcThreadSocketTest()
 {
@@ -142,7 +141,6 @@ void funcModelTcpClientTest()
 	return;
 }
 
-
 /*共享内存模块测试							**/
 void funcMemoryShareTest()
 {
@@ -218,7 +216,6 @@ void funcModelMemoryShareReadTest()
 			break;
 	}
 }
-
 
 /*加密模块测试								**/
 void funcEncryptTest()

@@ -63,6 +63,15 @@
     <Filter Include="OpenSSL\Source Files">
       <UniqueIdentifier>{9d3d68bf-774a-4cbb-abfd-f902a84afde2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="OpenSSL\Other Files">
+      <UniqueIdentifier>{69f2d76d-f690-4032-9282-06f682ef0c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PublicDataDef">
+      <UniqueIdentifier>{29e9855a-a8e0-47ac-8a82-2011bb004032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PublicDataDef\Head Files">
+      <UniqueIdentifier>{d5170b6b-e63e-4f76-a946-55ac20c4c3ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -138,6 +147,9 @@
     </ClInclude>
     <ClInclude Include="OpenSSL\Encrypt.h">
       <Filter>OpenSSL\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicDataDef\PublicDataDef.h">
+      <Filter>PublicDataDef\Head Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
