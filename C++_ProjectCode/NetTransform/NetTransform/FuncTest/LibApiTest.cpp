@@ -1,10 +1,10 @@
 #include "LibApiTest.h"
 
-extern "C"
-{
-	/*解决APPLINK错误问题										**/
-	#include <openssl\applink.c>
-};
+//extern "C"
+//{
+//	/*解决APPLINK错误问题										**/
+//	#include <openssl\applink.c>
+//};
 
 /*OpenSSL MD5 API测试											**/
 void funcOpensslMd5ApiTest()

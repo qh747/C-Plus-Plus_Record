@@ -110,6 +110,12 @@
     <ClCompile Include="OpenSSL\Encrypt.cpp">
       <Filter>OpenSSL\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MemoryShare\ClientMemShare.cpp">
+      <Filter>MemoryShare\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenSSL\RsaEncrypt.cpp">
+      <Filter>OpenSSL\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Protobuf\ProtobufDataDef.h">
@@ -151,10 +157,25 @@
     <ClInclude Include="PublicDataDef\PublicDataDef.h">
       <Filter>PublicDataDef\Head Files</Filter>
     </ClInclude>
+    <ClInclude Include="MemoryShare\ClientMemShare.h">
+      <Filter>MemoryShare\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenSSL\RsaEncrypt.h">
+      <Filter>OpenSSL\Head Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Protobuf\Message.proto">
       <Filter>Protobuf\Other Files</Filter>
+    </None>
+    <None Include="OpenSSL\RSA_TEST_RECV_PUBLIC_KEY.pem">
+      <Filter>OpenSSL\Other Files</Filter>
+    </None>
+    <None Include="OpenSSL\RSA_TEST_SEND_PRIVATE_KEY.pem">
+      <Filter>OpenSSL\Other Files</Filter>
+    </None>
+    <None Include="OpenSSL\RSA_TEST_SEND_PUBLIC_KEY.pem">
+      <Filter>OpenSSL\Other Files</Filter>
     </None>
   </ItemGroup>
 </Project>

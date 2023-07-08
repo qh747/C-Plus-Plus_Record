@@ -217,6 +217,24 @@ void funcModelMemoryShareReadTest()
 	}
 }
 
+void funModelClientMemoryShareTest()
+{
+	KeyInfo_dt keyInfo;
+	keyInfo.iKeyId = 1;
+	keyInfo.iKetStatus = KEY_IN_USE_STATE;
+	strcpy(keyInfo.sClientId, "CLIENT_KEY_1");
+	strcpy(keyInfo.sServerId, "SERVER_KEY_1");
+	strcpy(keyInfo.sKeyInfo, "CLIENT_SERVER_KEY");
+
+	ClientMemShare cltMemShare(1);
+	cltMemShare.writeKeyInfo(&keyInfo);
+	cout << "WIRTE: " << keyInfo.iKeyId << " " << keyInfo.iKetStatus << " " << keyInfo.sClientId << " " << keyInfo.sServerId << " " << keyInfo.sKeyInfo << endl;
+
+	KeyInfo_dt readKeyInfo;
+	cltMemShare.readKeyInfo(&readKeyInfo);
+	cout << "READ : " << readKeyInfo.iKeyId << " " << readKeyInfo.iKetStatus << " " << readKeyInfo.sClientId << " " << readKeyInfo.sServerId << " " << readKeyInfo.sKeyInfo << endl;
+}
+
 /*加密模块测试								**/
 void funcEncryptTest()
 {
@@ -259,4 +277,54 @@ void funcEncryptTest()
 	cout << "SRC DATA: " << "this is a test of SHA384." << endl;
 	cout << "DST SIZE: " << strlen(SHA384Encrypt.getEncryptHexData().c_str()) << endl;
 	cout << "DST DATA: " << SHA384Encrypt.getEncryptHexData() << endl << endl;
+}
+
+void funcRsaEncryptTest()
+{
+	/*客户端生成公钥和密钥					**/
+	RsaEncrypt rsaClientObj;
+	rsaClientObj.generateRsaKey(1024, "./OpenSSL/RSA_TEST_SEND_PUBLIC_KEY.pem", "./OpenSSL/RSA_TEST_SEND_PRIVATE_KEY.pem");
+
+	/***************      此处模拟客户端将公钥发送至服务端, 服务端解析后存储公钥流程      *****************/
+	ifstream ifs("./OpenSSL/RSA_TEST_SEND_PUBLIC_KEY.pem");
+	stringstream str;
+	str << ifs.rdbuf();
+	ifs.close();
+	string clientPubKey = str.str();
+
+	Encrypt encryptClientObj(Encrypt::TYPE_SHA224);
+	encryptClientObj.addOriginalData(clientPubKey, clientPubKey.size());
+	string md5ClientStr = encryptClientObj.getEncryptHexData();
+
+	string clientSign = rsaClientObj.sign(md5ClientStr, RsaEncrypt::SIGN_LEVEL1);
+
+	ofstream ofs("./OpenSSL/RSA_TEST_RECV_PUBLIC_KEY.pem");
+	ofs << clientPubKey;
+	ofs.close();
+
+	/*服务端解析公钥						**/
+	RsaEncrypt rsaServerObj;
+	rsaServerObj.prasePubKeyFromFile("./OpenSSL/RSA_TEST_RECV_PUBLIC_KEY.pem");
+
+	Encrypt encryptServerObj(Encrypt::TYPE_SHA224);
+	encryptServerObj.addOriginalData(clientPubKey, clientPubKey.size());
+	string md5ServerStr = encryptServerObj.getEncryptHexData();
+
+	bool verifyResult = rsaServerObj.signVerify(md5ServerStr, clientSign, RsaEncrypt::SIGN_LEVEL1);
+	if (true == verifyResult)
+		cout << "SERVER VERIFY SUCCESS." << endl;
+	else
+		return;
+	/******************************************************************************************************/
+
+	/*服务端发送数据传输密钥				**/
+	char serverKey[128] = "nihao hi 你好 bababala 12345";
+	cout << "TRANS KEY: " << serverKey << endl;
+
+	string encryptData = rsaServerObj.encryptByPubKey(serverKey);
+	cout << "ENCRYPT DATA: " << encryptData << endl;
+
+	/*客户端解析数据						**/
+	string decryptData = rsaClientObj.decryptByPriKey(encryptData);
+	cout << "DECRYPT DATA: " << decryptData << endl;
 }

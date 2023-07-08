@@ -2,3 +2,4 @@
 .vscode
 Debug
 x64
+/C++_ProjectCode/NetTransform/NetTransform/OpenSSL/*.pem

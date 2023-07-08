@@ -4,9 +4,19 @@
 using namespace std;
 
 /*当前测试模块标识宏							**/
-#define CURRENT_TEST_FLAG						15
+#define CURRENT_TEST_FLAG						17
+
+/*测试函数										**/
+void funcTest();
 
 int main()
+{
+	funcTest();
+
+	return 0;
+}
+
+void funcTest()
 {
 #if 1 == CURRENT_TEST_FLAG
 	/*编解码模块测试							**/
@@ -42,13 +52,13 @@ int main()
 	/*加密模块测试								**/
 	funcEncryptTest();
 #endif
-	
+
 
 #if 7 == CURRENT_TEST_FLAG
 	/*OpenSSL RSA API测试						**/
 	funcOpensslRsaSaveApiTest();
 #endif
-	
+
 
 #if 8 == CURRENT_TEST_FLAG
 	/*OpenSSL RSA API测试						**/
@@ -61,7 +71,7 @@ int main()
 	funcOpensslRsaSaveApiTest();
 	funcOpensslRsaEnCodeApiTest();
 #endif
-	
+
 
 #if 10 == CURRENT_TEST_FLAG
 	/*OpenSSL RSA API测试						**/
@@ -73,7 +83,7 @@ int main()
 	/*OpenSSL AES API测试						**/
 	funcOpensslAesApiTest();
 #endif
-	
+
 
 #if 12 == CURRENT_TEST_FLAG
 	/*JsonCpp 写文件 API测试					**/
@@ -91,14 +101,24 @@ int main()
 	/*JsonCpp 读文件 API测试					**/
 	funcJsonCppReadFileApiTest();
 #endif
-	
+
 
 #if 15 == CURRENT_TEST_FLAG
 	/*OpenSSL Base64 API测试					**/
 	funcOpensslBase64ApiTest();
 #endif
 
+
+#if 16 == CURRENT_TEST_FLAG
+	/*客户端共享内存模块测试					**/
+	funModelClientMemoryShareTest();
+#endif 
 	
+
+#if 17 == CURRENT_TEST_FLAG
+	/*RSA加密模块测试							**/
+	funcRsaEncryptTest();
+#endif
 	
-	return 0;
+
 }
