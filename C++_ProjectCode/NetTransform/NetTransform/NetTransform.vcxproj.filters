@@ -72,6 +72,18 @@
     <Filter Include="PublicDataDef\Head Files">
       <UniqueIdentifier>{d5170b6b-e63e-4f76-a946-55ac20c4c3ea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ClientJsonCpp">
+      <UniqueIdentifier>{ab51a341-14ed-45b3-86e0-ad2e4025a956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClientJsonCpp\Head Files">
+      <UniqueIdentifier>{dead6c74-89fb-4cf5-9d49-cd5f5cbc11c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClientJsonCpp\Source Files">
+      <UniqueIdentifier>{cc060311-3541-42a8-ba14-3de0fa2b92a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClientJsonCpp\Other Files">
+      <UniqueIdentifier>{28298f5f-b5e8-4434-9c2a-d75b3c0170ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -115,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="OpenSSL\RsaEncrypt.cpp">
       <Filter>OpenSSL\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonCpp\ClientJsonCpp.cpp">
+      <Filter>ClientJsonCpp\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +178,9 @@
     <ClInclude Include="OpenSSL\RsaEncrypt.h">
       <Filter>OpenSSL\Head Files</Filter>
     </ClInclude>
+    <ClInclude Include="JsonCpp\ClientJsonCpp.h">
+      <Filter>ClientJsonCpp\Head Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Protobuf\Message.proto">
@@ -176,6 +194,9 @@
     </None>
     <None Include="OpenSSL\RSA_TEST_SEND_PUBLIC_KEY.pem">
       <Filter>OpenSSL\Other Files</Filter>
+    </None>
+    <None Include="JsonCpp\ClientJsonConf.json">
+      <Filter>ClientJsonCpp\Other Files</Filter>
     </None>
   </ItemGroup>
 </Project>

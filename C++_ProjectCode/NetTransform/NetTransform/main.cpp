@@ -4,7 +4,7 @@
 using namespace std;
 
 /*当前测试模块标识宏							**/
-#define CURRENT_TEST_FLAG						17
+#define CURRENT_TEST_FLAG						18
 
 /*测试函数										**/
 void funcTest();
@@ -118,6 +118,12 @@ void funcTest()
 #if 17 == CURRENT_TEST_FLAG
 	/*RSA加密模块测试							**/
 	funcRsaEncryptTest();
+#endif
+	
+
+#if 18 == CURRENT_TEST_FLAG
+	/*json读取配置模块测试						**/
+	funcClientJsonConfTest();
 #endif
 	
 

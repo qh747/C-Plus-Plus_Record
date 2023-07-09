@@ -328,3 +328,19 @@ void funcRsaEncryptTest()
 	string decryptData = rsaClientObj.decryptByPriKey(encryptData);
 	cout << "DECRYPT DATA: " << decryptData << endl;
 }
+
+/*json¶ÁÈ¡ÅäÖÃÄ£¿é²âÊÔ						**/
+void funcClientJsonConfTest()
+{
+	bool isOk = false;
+	ClientJsonCpp clientJsonConf("./JsonCpp/ClientJsonConf.json", isOk);
+	if (false == isOk)
+		return;
+
+	ClitJsConf_dt jsonConf = clientJsonConf.getClientJsConf();
+	cout << "CLIENT ID: " << jsonConf.sClientId << endl;
+	cout << "SERVER ID: " << jsonConf.sServerId << endl;
+	cout << "SERVER IP: " << jsonConf.sServerIp << endl;
+	cout << "SERVER PT: " << jsonConf.iServerPort << endl;
+	cout << "MEMSHA ID: " << jsonConf.iClientMemShareId << endl;
+}

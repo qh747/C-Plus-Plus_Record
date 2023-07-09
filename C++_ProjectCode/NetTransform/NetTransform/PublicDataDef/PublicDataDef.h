@@ -7,6 +7,8 @@ const int SERVER_ID_LENGTH		= 128;											// 服务端ID长度
 const int KEY_INFO_LENGTH		= 128;											// 密钥长度
 const int KEY_IN_USE_STATE		= 1;											// 密钥可用
 const int KEY_IN_UNUSE_STATE	= 0;											// 密钥不可用
+const int SERVER_IP_LENGTH		= 32;											// 服务端IP地址长度
+
 
 /*密钥信息																		**/
 typedef struct DATA_TYPE_KEY_INFO
@@ -22,3 +24,19 @@ typedef struct DATA_TYPE_KEY_INFO
 		memset(this, 0, sizeof(DATA_TYPE_KEY_INFO));
 	}
 }KeyInfo_dt;
+
+
+/*客户端配置信息																**/
+typedef struct DATA_TYPE_CLIENT_JSON_CONFIGURE
+{
+	char			sClientId[CLIENT_ID_LENGTH];								// 客户端ID长度
+	char			sServerId[SERVER_ID_LENGTH];								// 服务端ID长度
+	char			sServerIp[SERVER_IP_LENGTH];								// 服务端IP
+	int				iServerPort;												// 服务端端口
+	int				iClientMemShareId;											// 客户端内存映射ID
+
+	DATA_TYPE_CLIENT_JSON_CONFIGURE()
+	{
+		memset(this, 0, sizeof(DATA_TYPE_CLIENT_JSON_CONFIGURE));
+	}
+}ClitJsConf_dt;

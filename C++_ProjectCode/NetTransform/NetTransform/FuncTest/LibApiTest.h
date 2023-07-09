@@ -2,7 +2,6 @@
 #pragma warning(disable: 4996)
 #include <iostream>
 #include <fstream>
-#include <fstream>
 #include <openssl\md5.h>
 #include <openssl\sha.h>
 #include <openssl\rsa.h>

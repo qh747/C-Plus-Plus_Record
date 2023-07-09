@@ -131,6 +131,7 @@
   <ItemGroup>
     <ClCompile Include="FuncTest\FuncTest.cpp" />
     <ClCompile Include="FuncTest\LibApiTest.cpp" />
+    <ClCompile Include="JsonCpp\ClientJsonCpp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MemoryShare\ClientMemShare.cpp" />
     <ClCompile Include="MemoryShare\MemoryShare.cpp" />
@@ -147,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="FuncTest\FuncTest.h" />
     <ClInclude Include="FuncTest\LibApiTest.h" />
+    <ClInclude Include="JsonCpp\ClientJsonCpp.h" />
     <ClInclude Include="MemoryShare\ClientMemShare.h" />
     <ClInclude Include="MemoryShare\MemoryShare.h" />
     <ClInclude Include="OpenSSL\Encrypt.h" />
@@ -162,6 +164,7 @@
     <ClInclude Include="ThreadPool\ThreadPool.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="JsonCpp\ClientJsonConf.json" />
     <None Include="OpenSSL\RSA_TEST_RECV_PUBLIC_KEY.pem" />
     <None Include="OpenSSL\RSA_TEST_SEND_PRIVATE_KEY.pem" />
     <None Include="OpenSSL\RSA_TEST_SEND_PUBLIC_KEY.pem" />

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <cstdio>
 #include "../Protobuf/Request.h"
 #include "../Protobuf/Response.h"
 #include "../Socket/TcpServer.h"
@@ -10,8 +11,9 @@
 #include "../MemoryShare/ClientMemShare.h"
 #include "../OpenSSL/Encrypt.h"
 #include "../OpenSSL/RsaEncrypt.h"
+#include "../JsonCpp/ClientJsonCpp.h"
 #include <Windows.h>
-#include <cstdio>
+
 using namespace std;
 
 /*±‡Ω‚¬Îƒ£øÈ≤‚ ‘							**/
@@ -33,3 +35,6 @@ void funModelClientMemoryShareTest();
 /*º”√‹ƒ£øÈ≤‚ ‘								**/
 void funcEncryptTest();
 void funcRsaEncryptTest();
+
+/*json∂¡»°≈‰÷√ƒ£øÈ≤‚ ‘						**/
+void funcClientJsonConfTest();
