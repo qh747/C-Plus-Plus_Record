@@ -129,6 +129,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Factory\CodecFactory.cpp" />
+    <ClCompile Include="Factory\ReqCodecFactory.cpp" />
+    <ClCompile Include="Factory\RespCodecFactory.cpp" />
     <ClCompile Include="FuncTest\FuncTest.cpp" />
     <ClCompile Include="FuncTest\LibApiTest.cpp" />
     <ClCompile Include="JsonCpp\ClientJsonCpp.cpp" />
@@ -146,6 +149,9 @@
     <ClCompile Include="ThreadPool\ThreadPool.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Factory\CodecFactory.h" />
+    <ClInclude Include="Factory\ReqCodecFactory.h" />
+    <ClInclude Include="Factory\RespCodecFactory.h" />
     <ClInclude Include="FuncTest\FuncTest.h" />
     <ClInclude Include="FuncTest\LibApiTest.h" />
     <ClInclude Include="JsonCpp\ClientJsonCpp.h" />
@@ -155,7 +161,6 @@
     <ClInclude Include="OpenSSL\RsaEncrypt.h" />
     <ClInclude Include="Protobuf\Codec.h" />
     <ClInclude Include="Protobuf\Message.pb.h" />
-    <ClInclude Include="Protobuf\ProtobufDataDef.h" />
     <ClInclude Include="Protobuf\Request.h" />
     <ClInclude Include="Protobuf\Response.h" />
     <ClInclude Include="PublicDataDef\PublicDataDef.h" />

@@ -4,7 +4,7 @@
 using namespace std;
 
 /*当前测试模块标识宏							**/
-#define CURRENT_TEST_FLAG						18
+#define CURRENT_TEST_FLAG						19
 
 /*测试函数										**/
 void funcTest();
@@ -127,4 +127,9 @@ void funcTest()
 #endif
 	
 
+#if 19 == CURRENT_TEST_FLAG
+	/*工厂模块测试								**/
+	funcFactoryTest();
+#endif
+	
 }

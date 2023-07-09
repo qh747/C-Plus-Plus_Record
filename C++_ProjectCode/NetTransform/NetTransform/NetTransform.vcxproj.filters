@@ -84,6 +84,18 @@
     <Filter Include="ClientJsonCpp\Other Files">
       <UniqueIdentifier>{28298f5f-b5e8-4434-9c2a-d75b3c0170ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Factory">
+      <UniqueIdentifier>{80cd3adb-7be5-42ae-8dee-c291cd8ada09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factory\Head Files">
+      <UniqueIdentifier>{29c3a26c-1fd1-4d97-ba40-08f7980c6bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factory\Other Files">
+      <UniqueIdentifier>{bbd04798-1db5-45fe-918c-a035ca52cd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factory\Source Files">
+      <UniqueIdentifier>{cb9c5ff7-5754-4314-bf7f-27daf40813e9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -131,11 +143,17 @@
     <ClCompile Include="JsonCpp\ClientJsonCpp.cpp">
       <Filter>ClientJsonCpp\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Factory\CodecFactory.cpp">
+      <Filter>Factory\Other Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory\ReqCodecFactory.cpp">
+      <Filter>Factory\Other Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory\RespCodecFactory.cpp">
+      <Filter>Factory\Other Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Protobuf\ProtobufDataDef.h">
-      <Filter>Protobuf\Head Files</Filter>
-    </ClInclude>
     <ClInclude Include="Protobuf\Message.pb.h">
       <Filter>Protobuf\Head Files</Filter>
     </ClInclude>
@@ -180,6 +198,15 @@
     </ClInclude>
     <ClInclude Include="JsonCpp\ClientJsonCpp.h">
       <Filter>ClientJsonCpp\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\CodecFactory.h">
+      <Filter>Factory\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\ReqCodecFactory.h">
+      <Filter>Factory\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\RespCodecFactory.h">
+      <Filter>Factory\Head Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

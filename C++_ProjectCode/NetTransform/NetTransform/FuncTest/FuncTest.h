@@ -12,6 +12,9 @@
 #include "../OpenSSL/Encrypt.h"
 #include "../OpenSSL/RsaEncrypt.h"
 #include "../JsonCpp/ClientJsonCpp.h"
+#include "../Factory/CodecFactory.h"
+#include "../Factory/ReqCodecFactory.h"
+#include "../Factory/RespCodecFactory.h"
 #include <Windows.h>
 
 using namespace std;
@@ -38,3 +41,6 @@ void funcRsaEncryptTest();
 
 /*json读取配置模块测试						**/
 void funcClientJsonConfTest();
+
+/*工厂模块测试								**/
+void funcFactoryTest();

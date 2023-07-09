@@ -14,17 +14,16 @@ void funcModelRequestCodecTest()
 {
 	/*请求消息初始化						**/
 	RequestMsg_dt srcMsg;
-	srcMsg.cmdType  = 1;
-	srcMsg.clientId = "Client No.1";
-	
-	srcMsg.serverId = "Server No.1";
-	srcMsg.sign     = "Source Message";
-	srcMsg.data		= "Register Server";
+	srcMsg.iCmdType  = 1;
+	srcMsg.sClientId = "Client No.1";
+	srcMsg.sServerId = "Server No.1";
+	srcMsg.sSign     = "Source Message";
+	srcMsg.sData	 = "Register Server";
 
 	Request_Codec reqEncodeModel;
 	reqEncodeModel.initMessage(srcMsg);
 
-	cout << "REQUEST SOURCE MSG:" << " " << srcMsg.cmdType << " " << srcMsg.clientId << " " << srcMsg.serverId << " " << srcMsg.sign << " " << srcMsg.data << endl << endl;
+	cout << "REQUEST SOURCE MSG:" << " " << srcMsg.iCmdType << " " << srcMsg.sClientId << " " << srcMsg.sServerId << " " << srcMsg.sSign << " " << srcMsg.sData << endl << endl;
 
 	/*请求消息编码							**/
 	string encodeMsg = reqEncodeModel.encodeMsg();
@@ -34,7 +33,7 @@ void funcModelRequestCodecTest()
 	reqDecodeModel.initMessage(encodeMsg);
 	RequestMsg_dt* pDstMsg = static_cast<RequestMsg_dt *>(reqDecodeModel.decodeMsg());
 	
-	cout << "REQUEST DEST MSG:" << " " << pDstMsg->cmdType << " " << pDstMsg->clientId << " " << pDstMsg->serverId << " " << pDstMsg->sign << " " << pDstMsg->data << endl << endl;
+	cout << "REQUEST DEST MSG:" << " " << pDstMsg->iCmdType << " " << pDstMsg->sClientId << " " << pDstMsg->sServerId << " " << pDstMsg->sSign << " " << pDstMsg->sData << endl << endl;
 	delete pDstMsg;
 }
 
@@ -42,16 +41,16 @@ void funcModelResponseCodecTest()
 {
 	/*响应消息初始化						**/
 	ResponseMsg_dt srcMsg;
-	srcMsg.clientId = "Client No.1";
-	srcMsg.serverId = "Server No.1";
-	srcMsg.seckeyId = 1;
-	srcMsg.data     = "Register Server";
-	srcMsg.status   = true;
+	srcMsg.sClientId = "Client No.1";
+	srcMsg.sServerId = "Server No.1";
+	srcMsg.iSeckeyId = 1;
+	srcMsg.sData     = "Register Server";
+	srcMsg.bStatus   = true;
 
 	Response_Codec respEncodeModel;
 	respEncodeModel.initMessage(srcMsg);
 
-	cout << "RESPONSE SOURCE MSG:" << " " << srcMsg.status << " " << srcMsg.clientId << " " << srcMsg.serverId << " " << srcMsg.seckeyId << " " << srcMsg.data << endl << endl;
+	cout << "RESPONSE SOURCE MSG:" << " " << srcMsg.bStatus << " " << srcMsg.sClientId << " " << srcMsg.sServerId << " " << srcMsg.iSeckeyId << " " << srcMsg.sData << endl << endl;
 
 	/*响应消息编码							**/
 	string encodeMsg = respEncodeModel.encodeMsg();
@@ -61,7 +60,7 @@ void funcModelResponseCodecTest()
 	respDecodeModel.initMessage(encodeMsg);
 	ResponseMsg_dt* pDstMsg = static_cast<ResponseMsg_dt *>(respDecodeModel.decodeMsg());
 
-	cout << "RESPONSE DEST MSG:" << " " << pDstMsg->status << " " << pDstMsg->clientId << " " << pDstMsg->serverId << " " << pDstMsg->seckeyId << " " << pDstMsg->data << endl << endl;
+	cout << "RESPONSE DEST MSG:" << " " << pDstMsg->bStatus << " " << pDstMsg->sClientId << " " << pDstMsg->sServerId << " " << pDstMsg->iSeckeyId << " " << pDstMsg->sData << endl << endl;
 	delete pDstMsg;
 }
 
@@ -343,4 +342,60 @@ void funcClientJsonConfTest()
 	cout << "SERVER IP: " << jsonConf.sServerIp << endl;
 	cout << "SERVER PT: " << jsonConf.iServerPort << endl;
 	cout << "MEMSHA ID: " << jsonConf.iClientMemShareId << endl;
+}
+
+/*工厂模块测试								**/
+void funcFactoryTest()
+{
+	RequestMsg_dt srcReqData;
+	srcReqData.iCmdType		= 1;
+	srcReqData.sClientId	= "CLIENT_ID_1";
+	srcReqData.sServerId	= "SERVER_ID_1";
+	srcReqData.sSign		= "REQ_DATA_SIGN";
+	srcReqData.sData		= "REQ_DATA";
+
+	cout << "SRC REQ DATA: " << srcReqData.iCmdType << " " << srcReqData.sClientId << " " << srcReqData.sServerId << " " << srcReqData.sSign << " " << srcReqData.sData << endl;
+
+	CodecFactory* pCodecFactory = new ReqCodecFactory(srcReqData);
+	Codec_Base* pCodec = pCodecFactory->createCodec();
+	
+	string encodeReqData = pCodec->encodeMsg();
+	cout << "SERIAL REQ DATA: " << encodeReqData << endl;
+
+	pCodecFactory->modifyType(SERIAL_TYPE, &encodeReqData);
+	Codec_Base* pEncodeCodec = pCodecFactory->createCodec();
+
+	RequestMsg_dt* pDstReqData = static_cast<RequestMsg_dt *>(pEncodeCodec->decodeMsg());
+	cout << "DST REQ DATA: " << pDstReqData->iCmdType << " " << pDstReqData->sClientId << " " << pDstReqData->sServerId << " " << pDstReqData->sSign << " " << pDstReqData->sData << endl;
+
+	delete pCodecFactory;
+	delete pCodec;
+	delete pEncodeCodec;
+	delete pDstReqData;
+
+	ResponseMsg_dt srcRespData;
+	srcRespData.bStatus   = true;
+	srcRespData.iSeckeyId = 2;
+	srcRespData.sClientId = "CLIENT_ID_2";
+	srcRespData.sServerId = "SERVER_ID_2";
+	srcRespData.sData     = "RESP_DATA";
+
+	cout << "SRC RESP DATA: " << srcRespData.bStatus << " " << srcRespData.iSeckeyId << " " << srcRespData.sClientId << " " << srcRespData.sServerId << " " << srcRespData.sData << endl;
+
+	pCodecFactory = new RespCodecFactory(srcRespData);
+	pCodec = pCodecFactory->createCodec();
+	
+	string encodeRespData = pCodec->encodeMsg();
+	cout << "SERIAL RESP DATA: " << encodeRespData << endl;
+
+	pCodecFactory->modifyType(SERIAL_TYPE, &encodeRespData);
+	pEncodeCodec = pCodecFactory->createCodec();
+
+	ResponseMsg_dt* pDstRespData = static_cast<ResponseMsg_dt *>(pEncodeCodec->decodeMsg());
+	cout << "DST RESP DATA: " << pDstRespData->bStatus << " " << pDstRespData->iSeckeyId << " " << pDstRespData->sClientId << " " << pDstRespData->sServerId << " " << pDstRespData->sData << endl;
+
+	delete pCodecFactory;
+	delete pCodec;
+	delete pEncodeCodec;
+	delete pDstRespData;
 }

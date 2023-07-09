@@ -1,7 +1,7 @@
 #pragma once
 #include "Codec.h"
 #include "Message.pb.h"
-#include "ProtobufDataDef.h"
+#include "../PublicDataDef/PublicDataDef.h"
 
 class Response_Codec : public Codec_Base
 {
