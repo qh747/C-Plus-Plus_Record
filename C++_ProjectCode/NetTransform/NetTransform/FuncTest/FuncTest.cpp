@@ -342,6 +342,14 @@ void funcClientJsonConfTest()
 	cout << "SERVER IP: " << jsonConf.sServerIp << endl;
 	cout << "SERVER PT: " << jsonConf.iServerPort << endl;
 	cout << "MEMSHA ID: " << jsonConf.iClientMemShareId << endl;
+
+	DBJsConf_dt dbConf = clientJsonConf.getDBJsConf();
+	cout << "DB NAME  : " << dbConf.sDBName << endl;
+	cout << "DB TBL   : " << dbConf.sDBTblName << endl;
+	cout << "DB USER  : " << dbConf.sDBUserName << endl;
+	cout << "DB PASSWD: " << dbConf.sDBUserPasswd << endl;
+	cout << "DB ADDR  : " << dbConf.sDBIpAddr << endl;
+	cout << "DB PORT  : " << dbConf.iDBPort << endl;
 }
 
 /*工厂模块测试								**/
@@ -398,4 +406,47 @@ void funcFactoryTest()
 	delete pCodec;
 	delete pEncodeCodec;
 	delete pDstRespData;
+}
+
+/*客户端数据库模块测试						**/
+void funcClientSqlTest()
+{
+	bool isOk = false;
+	ClientJsonCpp clientJsonConf("./JsonCpp/ClientJsonConf.json", isOk);
+	if (false == isOk)
+		return;
+
+	ClientSql clientSqlObj;
+	bool connResult = clientSqlObj.connectDatabase(clientJsonConf.getDBJsConf());
+
+	KeyInfo_dt data;
+	data.iKetStatus = 1;
+	data.iKeyId = 1;
+	strcpy(data.sClientId, "clientId_test");
+	strcpy(data.sServerId, "serverId_test");
+	strcpy(data.sKeyInfo, "client_keyinfo_test");
+
+	bool insertResult = clientSqlObj.insertKeyInfo(data);
+	if (false == insertResult)
+		return;
+
+	KeyInfo_dt searchData;
+	bool searchResult = clientSqlObj.getKeyInfo(data.iKeyId, searchData);
+	if (false == searchResult)
+		return;
+	else
+		cout << "CLIENT KEY INFO: " << searchData.iKeyId << " " << searchData.iKetStatus << " " << searchData.sClientId << " " << searchData.sServerId << " " << searchData.sKeyInfo << endl;
+
+	KeyInfo_dt valueData;
+	searchResult = clientSqlObj.getValuedKeyInfo(valueData);
+	if (false == searchResult)
+		return;
+	else
+		cout << "CLIENT VALUE KEY INFO: " << valueData.iKeyId << " " << valueData.iKetStatus << " " << valueData.sClientId << " " << valueData.sServerId << " " << valueData.sKeyInfo << endl;
+
+	bool removeResult = clientSqlObj.removeKeyInfo(valueData.iKeyId);
+	if (false == searchResult)
+		cout << "Remove Error." << endl;
+	else
+		cout << "Remove Success." << endl;
 }

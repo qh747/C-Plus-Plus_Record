@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\include;D:\Code\MyLibrary\OpenSSL_bin\OpenSSL-Win64\include;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\jsoncpp_lib\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\lib;D:\Code\MyLibrary\OpenSSL_bin\OpenSSL-Win64\lib;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\jsoncpp_lib\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\include;D:\Code\MyLibrary\OpenSSL_bin\OpenSSL-Win64\include;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\jsoncpp_lib\include;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\mysql_lib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\protobuf_lib\lib;D:\Code\MyLibrary\OpenSSL_bin\OpenSSL-Win64\lib;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\jsoncpp_lib\lib;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\include\mysql_lib\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -95,7 +95,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>libprotobufd.lib;libprotobuf-lited.lib;libprotocd.lib;libssl.lib;libcrypto.lib;jsoncpp.lib;jsoncpp_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libprotobufd.lib;libprotobuf-lited.lib;libprotocd.lib;libssl.lib;libcrypto.lib;jsoncpp.lib;jsoncpp_static.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -138,6 +138,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MemoryShare\ClientMemShare.cpp" />
     <ClCompile Include="MemoryShare\MemoryShare.cpp" />
+    <ClCompile Include="MYSQL\ClientSql.cpp" />
     <ClCompile Include="OpenSSL\Encrypt.cpp" />
     <ClCompile Include="OpenSSL\RsaEncrypt.cpp" />
     <ClCompile Include="Protobuf\Codec.cpp" />
@@ -157,6 +158,7 @@
     <ClInclude Include="JsonCpp\ClientJsonCpp.h" />
     <ClInclude Include="MemoryShare\ClientMemShare.h" />
     <ClInclude Include="MemoryShare\MemoryShare.h" />
+    <ClInclude Include="MYSQL\ClientSql.h" />
     <ClInclude Include="OpenSSL\Encrypt.h" />
     <ClInclude Include="OpenSSL\RsaEncrypt.h" />
     <ClInclude Include="Protobuf\Codec.h" />

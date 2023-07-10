@@ -96,6 +96,18 @@
     <Filter Include="Factory\Source Files">
       <UniqueIdentifier>{cb9c5ff7-5754-4314-bf7f-27daf40813e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MYSQL">
+      <UniqueIdentifier>{e6d04e94-f08f-4066-bb34-3fe0c990d2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MYSQL\Head Files">
+      <UniqueIdentifier>{c3971f2c-61c8-4911-b812-b81985a29be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MYSQL\Source Files">
+      <UniqueIdentifier>{5f42d47a-5e45-47f3-be1b-c6aff23187b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MYSQL\Other Files">
+      <UniqueIdentifier>{b7ab6cff-3896-47e1-a1dd-76108a3851d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -152,6 +164,9 @@
     <ClCompile Include="Factory\RespCodecFactory.cpp">
       <Filter>Factory\Other Files</Filter>
     </ClCompile>
+    <ClCompile Include="MYSQL\ClientSql.cpp">
+      <Filter>MYSQL\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Protobuf\Message.pb.h">
@@ -207,6 +222,9 @@
     </ClInclude>
     <ClInclude Include="Factory\RespCodecFactory.h">
       <Filter>Factory\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYSQL\ClientSql.h">
+      <Filter>MYSQL\Head Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -15,6 +15,7 @@
 #include "../Factory/CodecFactory.h"
 #include "../Factory/ReqCodecFactory.h"
 #include "../Factory/RespCodecFactory.h"
+#include "../MYSQL/ClientSql.h"
 #include <Windows.h>
 
 using namespace std;
@@ -44,3 +45,6 @@ void funcClientJsonConfTest();
 
 /*工厂模块测试								**/
 void funcFactoryTest();
+
+/*客户端数据库模块测试						**/
+void funcClientSqlTest();
