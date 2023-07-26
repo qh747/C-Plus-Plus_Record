@@ -1,4 +1,0 @@
-﻿  ClientSql.cpp
-d:\code\vsc++2022file\c-plus-plus_record\c++_projectcode\nettransform\nettransform\mysql\clientsql.cpp(128): warning C4244: “初始化”: 从“uint64_t”转换到“int”，可能丢失数据
-d:\code\vsc++2022file\c-plus-plus_record\c++_projectcode\nettransform\nettransform\mysql\clientsql.cpp(219): warning C4244: “初始化”: 从“uint64_t”转换到“int”，可能丢失数据
-  NetTransform.vcxproj -> D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_ProjectCode\NetTransform\x64\Debug\NetTransform.exe
