@@ -9,6 +9,3 @@
   
 3.C++_OneNote
   存放C++代码笔记，OntNote格式
-
-3.C++_ProjectCode
-  存放C++功能模型代码
