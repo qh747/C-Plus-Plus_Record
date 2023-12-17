@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Main\Header Files">
+      <UniqueIdentifier>{588ba697-8b73-4714-b5a8-030f4db4bdde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Source Files">
+      <UniqueIdentifier>{ac41fe1e-d780-4353-988c-f6ffb9991c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{073e1b7a-66cc-4bf5-afb0-de96dee2107a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Tree">
+      <UniqueIdentifier>{e7f3de34-efa3-4764-af93-12f0f5ec495a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Tree\Header Files">
+      <UniqueIdentifier>{27f186ff-4faf-4f84-a3b6-ce29c6fd7d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Tree\Source Files">
+      <UniqueIdentifier>{95aa0da3-9ccb-4656-ac74-f0de3b20d355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_LinkList">
+      <UniqueIdentifier>{1e69bdd5-d1c4-4dc9-94e8-f1cc6da85902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_LinkList\Header Files">
+      <UniqueIdentifier>{e7850fe7-1208-49a2-9548-8d28b9bf8faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_LinkList\Source Files">
+      <UniqueIdentifier>{a46d4d00-6270-4af2-9ce4-27ef16162be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Array">
+      <UniqueIdentifier>{8aee7170-f24f-4299-b2eb-0724f12ff1e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Array\Header Files">
+      <UniqueIdentifier>{8b11f3bb-2317-404f-86f5-7d644444c378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Array\Source Files">
+      <UniqueIdentifier>{a295d1d7-4f12-4b2d-992c-ef897b3358dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{66b5c539-be4f-4b22-a44e-78479677d39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_SwitchSort">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_SwitchSort\Header Files">
+      <UniqueIdentifier>{a17a4e3d-c78c-4725-98b6-1f5014a2e60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_SwitchSort\Source Files">
+      <UniqueIdentifier>{d49d0451-e23d-4009-85c7-15a09ad0b21a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_LinearList">
+      <UniqueIdentifier>{cb758f1c-93fb-43ad-8f64-9021c12cdc88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_LinearList\Header Files">
+      <UniqueIdentifier>{957b8267-debc-4605-ab97-4e18df497966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_LinearList\Source Files">
+      <UniqueIdentifier>{b36edd81-e624-4620-93a6-7e28025482d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Algorithms\Algorithm_SwitchSort\BubbleSort.cpp">
+      <Filter>Algorithm\Algorithm_SwitchSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFiles\main.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFiles\AlgorithmTest.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFiles\DataStructTest.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_SwitchSort\QuickSort.cpp">
+      <Filter>Algorithm\Algorithm_SwitchSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Tree\BinaryTree.cpp">
+      <Filter>DataStructure\DataStruct_Tree\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_LinkList\DoubleLinkList.cpp">
+      <Filter>DataStructure\DataStruct_LinkList\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_LinkList\SingleLinkList.cpp">
+      <Filter>DataStructure\DataStruct_LinkList\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Array\DynamicArray.cpp">
+      <Filter>DataStructure\DataStruct_Array\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Array\DynamicArrayAdv.cpp">
+      <Filter>DataStructure\DataStruct_Array\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_LinearList\LinkListOperate.cpp">
+      <Filter>Algorithm\Algorithm_LinearList\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
+      <Filter>Algorithm\Algorithm_SwitchSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFiles\AlgorithmTest.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFiles\DataStructTest.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_SwitchSort\QuickSort.h">
+      <Filter>Algorithm\Algorithm_SwitchSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Tree\BinaryTree.h">
+      <Filter>DataStructure\DataStruct_Tree\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_LinkList\DoubleLinkList.h">
+      <Filter>DataStructure\DataStruct_LinkList\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_LinkList\SingleLinkList.h">
+      <Filter>DataStructure\DataStruct_LinkList\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Array\DynamicArray.h">
+      <Filter>DataStructure\DataStruct_Array\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Array\DynamicArrayAdv.h">
+      <Filter>DataStructure\DataStruct_Array\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_LinearList\LinkListOperate.h">
+      <Filter>Algorithm\Algorithm_LinearList\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
