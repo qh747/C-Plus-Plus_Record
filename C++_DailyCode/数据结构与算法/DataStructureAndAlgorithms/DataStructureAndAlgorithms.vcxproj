@@ -127,6 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithms\Algorithm_ChooseSort\ChooseSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_InsertSort\ShellInsert.cpp" />
     <ClCompile Include="Algorithms\Algorithm_LinearList\LinkListOperate.cpp" />
     <ClCompile Include="Algorithms\Algorithm_SwitchSort\BubbleSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_SwitchSort\QuickSort.cpp" />
@@ -140,6 +144,10 @@
     <ClCompile Include="MainFiles\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithms\Algorithm_ChooseSort\ChooseSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_InsertSort\ShellInsert.h" />
     <ClInclude Include="Algorithms\Algorithm_LinearList\LinkListOperate.h" />
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h" />
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\QuickSort.h" />

@@ -67,6 +67,24 @@
     <Filter Include="Algorithm\Algorithm_LinearList\Source Files">
       <UniqueIdentifier>{b36edd81-e624-4620-93a6-7e28025482d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Algorithm\Algorithm_ChooseSort">
+      <UniqueIdentifier>{ec980bd5-94f9-42cd-9c1f-ba514066ba14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_ChooseSort\Header Files">
+      <UniqueIdentifier>{987cade3-99c1-4f8e-be3f-5059a4372e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_ChooseSort\Source Files">
+      <UniqueIdentifier>{5bd30868-ae22-494e-9b0d-ff12d8108a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_InsertSort">
+      <UniqueIdentifier>{2a4e655e-fab8-427e-a080-7032ee1e9cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_InsertSort\Header Files">
+      <UniqueIdentifier>{71e4b126-5428-4fd6-af34-cfc86032c144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_InsertSort\Source Files">
+      <UniqueIdentifier>{ae013dac-9e06-44fe-8ccb-63c324fc5c70}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms\Algorithm_SwitchSort\BubbleSort.cpp">
@@ -102,6 +120,18 @@
     <ClCompile Include="Algorithms\Algorithm_LinearList\LinkListOperate.cpp">
       <Filter>Algorithm\Algorithm_LinearList\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.cpp">
+      <Filter>Algorithm\Algorithm_InsertSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_ChooseSort\ChooseSort.cpp">
+      <Filter>Algorithm\Algorithm_ChooseSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.cpp">
+      <Filter>Algorithm\Algorithm_InsertSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_InsertSort\ShellInsert.cpp">
+      <Filter>Algorithm\Algorithm_InsertSort\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
@@ -133,6 +163,18 @@
     </ClInclude>
     <ClInclude Include="Algorithms\Algorithm_LinearList\LinkListOperate.h">
       <Filter>Algorithm\Algorithm_LinearList\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.h">
+      <Filter>Algorithm\Algorithm_InsertSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_ChooseSort\ChooseSort.h">
+      <Filter>Algorithm\Algorithm_ChooseSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.h">
+      <Filter>Algorithm\Algorithm_InsertSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_InsertSort\ShellInsert.h">
+      <Filter>Algorithm\Algorithm_InsertSort\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
