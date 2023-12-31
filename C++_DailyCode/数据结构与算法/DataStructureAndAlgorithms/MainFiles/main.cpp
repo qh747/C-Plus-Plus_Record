@@ -3,7 +3,7 @@
 #include "DataStructTest.h"
 using namespace std;
 
-#define TEST_TYPE 1
+#define TEST_TYPE 2
 
 int main()
 {
@@ -20,13 +20,6 @@ int main()
 	dataStructTest();
 
 #endif 
-
-#if 3 == TEST_TYPE
-
-	/*∆‰À˚≤‚ ‘									**/
-	
-
-#endif
 
 	return 0;
 }

@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithms\Algorithm_AllocateSort\RadixSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_ChooseSort\ChooseSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_ChooseSort\HeapSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_InnerSort\MergeSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSort\ShellInsert.cpp" />
@@ -138,13 +141,18 @@
     <ClCompile Include="DataStructure\DataStruct_Array\DynamicArrayAdv.cpp" />
     <ClCompile Include="DataStructure\DataStruct_LinkList\DoubleLinkList.cpp" />
     <ClCompile Include="DataStructure\DataStruct_LinkList\SingleLinkList.cpp" />
+    <ClCompile Include="DataStructure\DataStruct_Stack\LinkStack.cpp" />
+    <ClCompile Include="DataStructure\DataStruct_Stack\SequenceStack.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Tree\BinaryTree.cpp" />
     <ClCompile Include="MainFiles\AlgorithmTest.cpp" />
     <ClCompile Include="MainFiles\DataStructTest.cpp" />
     <ClCompile Include="MainFiles\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithms\Algorithm_AllocateSort\RadixSort.h" />
     <ClInclude Include="Algorithms\Algorithm_ChooseSort\ChooseSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_ChooseSort\HeapSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_InnerSort\MergeSort.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSort\ShellInsert.h" />
@@ -155,6 +163,8 @@
     <ClInclude Include="DataStructure\DataStruct_Array\DynamicArrayAdv.h" />
     <ClInclude Include="DataStructure\DataStruct_LinkList\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\DataStruct_LinkList\SingleLinkList.h" />
+    <ClInclude Include="DataStructure\DataStruct_Stack\LinkStack.h" />
+    <ClInclude Include="DataStructure\DataStruct_Stack\SequenceStack.h" />
     <ClInclude Include="DataStructure\DataStruct_Tree\BinaryTree.h" />
     <ClInclude Include="MainFiles\AlgorithmTest.h" />
     <ClInclude Include="MainFiles\DataStructTest.h" />

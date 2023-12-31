@@ -4,6 +4,8 @@
 #include "../DataStructure/DataStruct_Array/DynamicArrayAdv.h"
 #include "../DataStructure/DataStruct_LinkList/SingleLinkList.h"
 #include "../DataStructure/DataStruct_LinkList/DoubleLinkList.h"
+#include "../DataStructure/DataStruct_Stack/SequenceStack.h"
+#include "../DataStructure/DataStruct_Stack/LinkStack.h"
 using namespace std;
 
 /* ˝æ›Ω·ππ≤‚ ‘																**/
@@ -20,3 +22,9 @@ void funcSingleLinkListTest();
 
 /*À´œÚ¡¥±Ì≤‚ ‘																**/
 void funcDoubleLinkListTest();
+
+/*À≥–Ú’ª≤‚ ‘																**/
+void funcSequenceStackTest();
+
+/*¡¥ Ω’ª≤‚ ‘																**/
+void funcLinkStackTest();

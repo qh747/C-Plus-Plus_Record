@@ -1,5 +1,5 @@
 #include "AlgorithmTest.h"
-#define ALGTHM_TEST_SEQ  7
+#define ALGTHM_TEST_SEQ  11
 
 /*功能测试											**/
 void algorithmTest()
@@ -25,16 +25,28 @@ void algorithmTest()
 	funcCallChooseSort();
 
 #elif 6 == ALGTHM_TEST_SEQ
+	/*堆排序										**/
+	funcCallHeapSort();
+
+#elif 7 == ALGTHM_TEST_SEQ
 	/*直接插入排序									**/
 	funcCallDirectInsertSort();
 
-#elif 7 == ALGTHM_TEST_SEQ
+#elif 8 == ALGTHM_TEST_SEQ
 	/*二分插入排序									**/
 	funcCallBinaryInsertSort();
 
-#elif 8 == ALGTHM_TEST_SEQ
+#elif 9 == ALGTHM_TEST_SEQ
 	/*希尔排序										**/
 	funcCallShellInsertSort();
+
+#elif 10 == ALGTHM_TEST_SEQ
+	/*归并排序										**/
+	funcCallMergeSort();
+
+#elif 11 == ALGTHM_TEST_SEQ
+	/*基数排序										**/
+	funcCallRadixSort();
 
 #endif
 }

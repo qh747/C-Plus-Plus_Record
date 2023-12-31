@@ -85,6 +85,33 @@
     <Filter Include="Algorithm\Algorithm_InsertSort\Source Files">
       <UniqueIdentifier>{ae013dac-9e06-44fe-8ccb-63c324fc5c70}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Algorithm\Algorithm_InnerSort">
+      <UniqueIdentifier>{ea4caae0-eff7-40cb-a9cc-56eca46cddcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_InnerSort\Header Files">
+      <UniqueIdentifier>{ace281d5-e1a7-43e4-b964-16f84d9cf549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_InnerSort\Source Files">
+      <UniqueIdentifier>{d7f9b1f8-6f89-43e2-bf6c-bc5747892983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_AllocateSort">
+      <UniqueIdentifier>{f08633d7-60ad-47a8-88a8-b234bcfac166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_AllocateSort\Header Files">
+      <UniqueIdentifier>{2661a0b2-4016-41eb-b17d-fae42c328990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_AllocateSort\Source Files">
+      <UniqueIdentifier>{4a2c490a-7ed9-44e7-b29d-1cb7fee84802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Stack">
+      <UniqueIdentifier>{8bbe1a79-2fc8-463f-bec8-70a1c0058fa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Stack\Header Fles">
+      <UniqueIdentifier>{d9c2218b-2a64-4454-832e-ba092592a109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Stack\Source Files">
+      <UniqueIdentifier>{ab8aa0f2-03b4-4262-84c1-1a6be95a85d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms\Algorithm_SwitchSort\BubbleSort.cpp">
@@ -132,6 +159,21 @@
     <ClCompile Include="Algorithms\Algorithm_InsertSort\ShellInsert.cpp">
       <Filter>Algorithm\Algorithm_InsertSort\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_ChooseSort\HeapSort.cpp">
+      <Filter>Algorithm\Algorithm_ChooseSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_InnerSort\MergeSort.cpp">
+      <Filter>Algorithm\Algorithm_InnerSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_AllocateSort\RadixSort.cpp">
+      <Filter>Algorithm\Algorithm_AllocateSort\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Stack\SequenceStack.cpp">
+      <Filter>DataStructure\DataStruct_Stack\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Stack\LinkStack.cpp">
+      <Filter>DataStructure\DataStruct_Stack\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
@@ -175,6 +217,21 @@
     </ClInclude>
     <ClInclude Include="Algorithms\Algorithm_InsertSort\ShellInsert.h">
       <Filter>Algorithm\Algorithm_InsertSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_ChooseSort\HeapSort.h">
+      <Filter>Algorithm\Algorithm_ChooseSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_InnerSort\MergeSort.h">
+      <Filter>Algorithm\Algorithm_InnerSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_AllocateSort\RadixSort.h">
+      <Filter>Algorithm\Algorithm_AllocateSort\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Stack\SequenceStack.h">
+      <Filter>DataStructure\DataStruct_Stack\Header Fles</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Stack\LinkStack.h">
+      <Filter>DataStructure\DataStruct_Stack\Header Fles</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

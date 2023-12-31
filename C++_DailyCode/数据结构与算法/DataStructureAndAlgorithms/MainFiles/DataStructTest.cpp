@@ -1,30 +1,39 @@
 #include "DataStructTest.h"
-#define DATASTRUCT_TEST_SEQ  4
+#define DATASTRUCT_TEST_SEQ  6
 
 /*数据结构测试																**/
 void dataStructTest()
 {
 #if 1 == DATASTRUCT_TEST_SEQ
+
 	/*动态数组测试															**/
 	funcDynamicArrayTest();
-#endif
 
+#elif 2 == DATASTRUCT_TEST_SEQ
 
-#if 2 == DATASTRUCT_TEST_SEQ
 	/*改进版动态数组测试													**/
 	funcDynamicArrayAdvTest();
-#endif
-
 	
-#if 3 == DATASTRUCT_TEST_SEQ
+#elif 3 == DATASTRUCT_TEST_SEQ
+
 	/*单向链表测试															**/
 	funcSingleLinkListTest();
-#endif
 
+#elif 4 == DATASTRUCT_TEST_SEQ
 
-#if 4 == DATASTRUCT_TEST_SEQ
 	/*双向链表测试															**/
 	funcDoubleLinkListTest();
+
+#elif 5 == DATASTRUCT_TEST_SEQ
+
+	/*顺序栈测试															**/
+	funcSequenceStackTest();
+
+#elif 6 == DATASTRUCT_TEST_SEQ
+
+	/*链式栈测试															**/
+	funcLinkStackTest();
+
 #endif
 }
 
@@ -365,4 +374,100 @@ void funcDoubleLinkListTest()
 	/*清空数据测试																**/
 	linkList.clear();
 	cout << endl << "CLEAR DATA TEST." << endl << "Double Link Size: " << linkList.size() << endl;
+}
+
+/*顺序栈测试																**/
+void funcSequenceStackTest()
+{
+	SequenceStack fstSeqStack;
+
+	cout << "First Stack Push: ";
+	for (int i = 1; i <= 10; ++i)
+	{
+		fstSeqStack.push(i);
+		cout << i << " ";
+	}
+	cout << endl << endl;
+
+	cout << "First Stack Size: " << fstSeqStack.size() << endl << endl;
+
+	cout << "First Stack Pop: ";
+	while (!fstSeqStack.empty())
+	{
+		int topVal = fstSeqStack.top();
+		fstSeqStack.pop();
+
+		cout <<  topVal << " ";
+	}
+	cout << endl << endl;
+
+	SequenceStack secSeqStack(10);
+
+	cout << "Second Stack Push: ";
+	for (int i = 11; i <= 21; ++i)
+	{
+		secSeqStack.push(i);
+		cout << i << " ";
+	}
+	cout << endl << endl;
+
+	cout << "Second Stack Size: " << secSeqStack.size() << endl << endl;
+
+	cout << "Second Stack Pop: ";
+	while (!secSeqStack.empty())
+	{
+		int topVal = secSeqStack.top();
+		secSeqStack.pop();
+
+		cout << topVal << " ";
+	}
+	cout << endl << endl;
+}
+
+/*链式栈测试																**/
+void funcLinkStackTest()
+{
+	LinkStack fstLinkStack;
+
+	cout << "First Stack Push: ";
+	for (int i = 1; i <= 10; ++i)
+	{
+		fstLinkStack.push(i);
+		cout << i << " ";
+	}
+	cout << endl << endl;
+
+	cout << "First Stack Size: " << fstLinkStack.size() << endl << endl;
+
+	cout << "First Stack Pop: ";
+	while (!fstLinkStack.empty())
+	{
+		int topVal = fstLinkStack.top();
+		fstLinkStack.pop();
+
+		cout << topVal << " ";
+	}
+	cout << endl << endl;
+
+	LinkStack secLinkStack(10);
+
+	cout << "Second Stack Push: ";
+	for (int i = 11; i <= 21; ++i)
+	{
+		secLinkStack.push(i);
+		cout << i << " ";
+	}
+	cout << endl << endl;
+
+	cout << "Second Stack Size: " << secLinkStack.size() << endl << endl;
+
+	cout << "Second Stack Pop: ";
+	while (!secLinkStack.empty())
+	{
+		int topVal = secLinkStack.top();
+		secLinkStack.pop();
+
+		cout << topVal << " ";
+	}
+	cout << endl << endl;
 }
