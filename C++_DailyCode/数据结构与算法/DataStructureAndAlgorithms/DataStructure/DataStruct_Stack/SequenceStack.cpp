@@ -2,7 +2,7 @@
 
 void SequenceStack::push(int val)
 {
-	if (m_stackContainer.size() >= m_maxSize)
+	if (m_stackContainer.size() >= m_maxSize && -1 != m_maxSize)
 	{
 		cerr << "The Sequence Stack Is Full." << endl;
 		return;

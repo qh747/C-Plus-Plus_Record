@@ -112,6 +112,15 @@
     <Filter Include="DataStructure\DataStruct_Stack\Source Files">
       <UniqueIdentifier>{ab8aa0f2-03b4-4262-84c1-1a6be95a85d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DataStructure\DataStruct_Queue">
+      <UniqueIdentifier>{6c15d23d-ece9-4f7d-9ff6-5fb0785bd7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Queue\Header Files">
+      <UniqueIdentifier>{fa46b18b-6b19-4ae1-9a0d-432739453800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\DataStruct_Queue\Source Files">
+      <UniqueIdentifier>{cd95435a-e983-4c3d-9938-6a822b24fd99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms\Algorithm_SwitchSort\BubbleSort.cpp">
@@ -174,6 +183,9 @@
     <ClCompile Include="DataStructure\DataStruct_Stack\LinkStack.cpp">
       <Filter>DataStructure\DataStruct_Stack\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Queue\SequenceQueue.cpp">
+      <Filter>DataStructure\DataStruct_Queue\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
@@ -232,6 +244,9 @@
     </ClInclude>
     <ClInclude Include="DataStructure\DataStruct_Stack\LinkStack.h">
       <Filter>DataStructure\DataStruct_Stack\Header Fles</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Queue\SequenceQueue.h">
+      <Filter>DataStructure\DataStruct_Queue\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

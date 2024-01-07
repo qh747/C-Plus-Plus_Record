@@ -6,6 +6,8 @@
 #include "../DataStructure/DataStruct_LinkList/DoubleLinkList.h"
 #include "../DataStructure/DataStruct_Stack/SequenceStack.h"
 #include "../DataStructure/DataStruct_Stack/LinkStack.h"
+#include "../DataStructure/DataStruct_Queue/SequenceQueue.h"
+#include "../DataStructure/DataStruct_Tree/BinaryTree.h"
 using namespace std;
 
 /*数据结构测试																**/
@@ -28,3 +30,9 @@ void funcSequenceStackTest();
 
 /*链式栈测试																**/
 void funcLinkStackTest();
+
+/*顺序队列测试																**/
+void funcSequenceQueueTest();
+
+/*二叉树测试																**/
+void funcBinaryTreeTest();

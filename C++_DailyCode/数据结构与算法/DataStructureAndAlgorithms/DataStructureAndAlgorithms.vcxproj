@@ -141,6 +141,7 @@
     <ClCompile Include="DataStructure\DataStruct_Array\DynamicArrayAdv.cpp" />
     <ClCompile Include="DataStructure\DataStruct_LinkList\DoubleLinkList.cpp" />
     <ClCompile Include="DataStructure\DataStruct_LinkList\SingleLinkList.cpp" />
+    <ClCompile Include="DataStructure\DataStruct_Queue\SequenceQueue.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Stack\LinkStack.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Stack\SequenceStack.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Tree\BinaryTree.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="DataStructure\DataStruct_Array\DynamicArrayAdv.h" />
     <ClInclude Include="DataStructure\DataStruct_LinkList\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\DataStruct_LinkList\SingleLinkList.h" />
+    <ClInclude Include="DataStructure\DataStruct_Queue\SequenceQueue.h" />
     <ClInclude Include="DataStructure\DataStruct_Stack\LinkStack.h" />
     <ClInclude Include="DataStructure\DataStruct_Stack\SequenceStack.h" />
     <ClInclude Include="DataStructure\DataStruct_Tree\BinaryTree.h" />

@@ -1,5 +1,5 @@
 #include "DataStructTest.h"
-#define DATASTRUCT_TEST_SEQ  6
+#define DATASTRUCT_TEST_SEQ  8
 
 /* ˝æ›Ω·ππ≤‚ ‘																**/
 void dataStructTest()
@@ -33,6 +33,16 @@ void dataStructTest()
 
 	/*¡¥ Ω’ª≤‚ ‘															**/
 	funcLinkStackTest();
+
+#elif 7 == DATASTRUCT_TEST_SEQ
+
+	/*À≥–Ú∂”¡–≤‚ ‘															**/
+	funcSequenceQueueTest();
+
+#elif 8 == DATASTRUCT_TEST_SEQ
+
+	/*∂˛≤Ê ˜≤‚ ‘															**/
+	funcBinaryTreeTest();
 
 #endif
 }
@@ -470,4 +480,85 @@ void funcLinkStackTest()
 		cout << topVal << " ";
 	}
 	cout << endl << endl;
+}
+
+/*À≥–Ú∂”¡–≤‚ ‘																**/
+void funcSequenceQueueTest()
+{
+	SequenceQueue fstSeqQueue;
+
+	cout << "First Queue Push: ";
+	for (int i = 1; i <= 10; ++i)
+	{
+		fstSeqQueue.push(i);
+		cout << i << " ";
+	}
+	cout << endl << endl;
+
+	cout << "First Queue Size: " << fstSeqQueue.size() << endl << endl;
+
+	cout << "First Queue Pop: ";
+	while (!fstSeqQueue.empty())
+	{
+		int topVal = fstSeqQueue.top();
+		fstSeqQueue.pop();
+
+		cout << topVal << " ";
+	}
+	cout << endl << endl;
+
+	SequenceQueue secSeqQueue(10);
+
+	cout << "Second Queue Push: ";
+	for (int i = 11; i <= 21; ++i)
+	{
+		secSeqQueue.push(i);
+		cout << i << " ";
+	}
+	cout << endl << endl;
+
+	cout << "Second Queue Size: " << secSeqQueue.size() << endl << endl;
+
+	cout << "Second Queue Pop: ";
+	while (!secSeqQueue.empty())
+	{
+		int topVal = secSeqQueue.top();
+		secSeqQueue.pop();
+
+		cout << topVal << " ";
+	}
+	cout << endl << endl;
+}
+
+/*∂˛≤Ê ˜≤‚ ‘																**/
+void funcBinaryTreeTest()
+{
+	BinaryTree bTree;
+	cout << "First Binary Tree Leaf Node Count: " << bTree.getLeafNodeCount() << endl;
+	cout << "First Binary Tree Depth: " << bTree.getTreeDepth() << endl;
+
+	bTree.addNewNode(1);
+	bTree.addNewNode(2);
+	bTree.addNewNode(3);
+	bTree.addNewNode(4);
+	bTree.addNewNode(5);
+	bTree.addNewNode(6);
+	bTree.addNewNode(7);
+
+	bTree.foreachTree(FIRST_SEQ_FOREACH);
+	cout << "First Binary Tree Leaf Node Count: " << bTree.getLeafNodeCount() << endl;
+	cout << "First Binary Tree Depth: " << bTree.getTreeDepth() << endl << endl;
+
+	BinaryTree* pCopyBTree = bTree.copyBinaryTree();
+	pCopyBTree->foreachTree(MIDDLE_SEQ_FOREACH);
+	cout << "Second Binary Tree Leaf Node Count: " << pCopyBTree->getLeafNodeCount() << endl;
+	cout << "Second Binary Tree Depth: " << pCopyBTree->getTreeDepth() << endl << endl;
+
+	BinaryTree* pSecCopyBTree = pCopyBTree->copyBinaryTree();
+	pSecCopyBTree->foreachTree(LAST_SEQ_FOREACH);
+	cout << "Third Binary Tree Leaf Node Count: " << pSecCopyBTree->getLeafNodeCount() << endl;
+	cout << "Third Binary Tree Depth: " << pSecCopyBTree->getTreeDepth() << endl << endl;
+
+	delete pCopyBTree;
+	delete pSecCopyBTree;
 }
