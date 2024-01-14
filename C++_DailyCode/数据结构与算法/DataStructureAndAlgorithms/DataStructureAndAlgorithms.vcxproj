@@ -128,9 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms\Algorithm_AllocateSort\RadixSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_BinarySearch\BinarySort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_BlockSearch\BlockSearch.cpp" />
     <ClCompile Include="Algorithms\Algorithm_ChooseSort\ChooseSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_ChooseSort\HeapSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InnerSort\MergeSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_InsertSearch\InsertSearch.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSort\ShellInsert.cpp" />
@@ -151,9 +154,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_AllocateSort\RadixSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_BinarySearch\BinarySearch.h" />
+    <ClInclude Include="Algorithms\Algorithm_BlockSearch\BlockSearch.h" />
     <ClInclude Include="Algorithms\Algorithm_ChooseSort\ChooseSort.h" />
     <ClInclude Include="Algorithms\Algorithm_ChooseSort\HeapSort.h" />
     <ClInclude Include="Algorithms\Algorithm_InnerSort\MergeSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_InsertSearch\InsertSearch.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSort\DirectInsertSort.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSort\ShellInsert.h" />

@@ -534,6 +534,7 @@ void funcSequenceQueueTest()
 void funcBinaryTreeTest()
 {
 	BinaryTree bTree;
+	cout << "First Binary Tree Node Count: " << bTree.getNodeCount() << endl;
 	cout << "First Binary Tree Leaf Node Count: " << bTree.getLeafNodeCount() << endl;
 	cout << "First Binary Tree Depth: " << bTree.getTreeDepth() << endl;
 
@@ -546,18 +547,24 @@ void funcBinaryTreeTest()
 	bTree.addNewNode(7);
 
 	bTree.foreachTree(FIRST_SEQ_FOREACH);
+	cout << "First Binary Tree Node Count: " << bTree.getNodeCount() << endl;
 	cout << "First Binary Tree Leaf Node Count: " << bTree.getLeafNodeCount() << endl;
 	cout << "First Binary Tree Depth: " << bTree.getTreeDepth() << endl << endl;
 
 	BinaryTree* pCopyBTree = bTree.copyBinaryTree();
 	pCopyBTree->foreachTree(MIDDLE_SEQ_FOREACH);
+	cout << "Second Binary Tree Node Count: " << pCopyBTree->getNodeCount() << endl;
 	cout << "Second Binary Tree Leaf Node Count: " << pCopyBTree->getLeafNodeCount() << endl;
 	cout << "Second Binary Tree Depth: " << pCopyBTree->getTreeDepth() << endl << endl;
 
 	BinaryTree* pSecCopyBTree = pCopyBTree->copyBinaryTree();
 	pSecCopyBTree->foreachTree(LAST_SEQ_FOREACH);
+	cout << "Third Binary Tree Node Count: " << pSecCopyBTree->getNodeCount() << endl;
 	cout << "Third Binary Tree Leaf Node Count: " << pSecCopyBTree->getLeafNodeCount() << endl;
 	cout << "Third Binary Tree Depth: " << pSecCopyBTree->getTreeDepth() << endl << endl;
+
+	pSecCopyBTree->foreachTree(NON_RECURSION_FOREACH);
+	pSecCopyBTree->foreachTree(HIERARCHICAL_FOREACH);
 
 	delete pCopyBTree;
 	delete pSecCopyBTree;

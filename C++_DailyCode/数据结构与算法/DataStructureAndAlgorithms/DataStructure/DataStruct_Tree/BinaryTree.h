@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <stack>
+#include <queue>
 using namespace std;
 
 /*二叉树遍历类型															**/
@@ -9,6 +11,8 @@ typedef enum TYPE_BTREE_FOREACH
 	FIRST_SEQ_FOREACH				= 0,									// 先序遍历
 	MIDDLE_SEQ_FOREACH				= 1,									// 中序遍历
 	LAST_SEQ_FOREACH				= 2,									// 后序遍历
+	NON_RECURSION_FOREACH		    = 3,									// 非递归遍历
+	HIERARCHICAL_FOREACH            = 4,									// 层次遍历
 
 }BtreeForach_t;
 
@@ -42,6 +46,7 @@ public:
 
 public:
 	bool						addNewNode(int val);															// 添加新节点
+	int							getNodeCount();																	// 获取节点个数
 	int							getLeafNodeCount();																// 获取叶子节点个数
 	int							getTreeDepth();																	// 获取二叉树深度
 	void						foreachTree(BtreeForach_t type);												// 遍历二叉树
@@ -49,6 +54,7 @@ public:
 
 private:
 	void						freeTree(BTreeNode_dt** pRootNodeAddr);											// 释放二叉树
+	int							countNode(BTreeNode_dt* pRootNode);												// 统计节点个数
 	int							countLeafNode(BTreeNode_dt* pRootNode);											// 统计叶子节点(类内部使用)
 	int							countTreeDepth(BTreeNode_dt* pRootNode);										// 获取二叉树的深度(类内部使用)
 	void						foreachTree(BTreeNode_dt* pRootNode, BtreeForach_t type);						// 二叉树遍历(类内部使用)

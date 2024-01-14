@@ -66,6 +66,12 @@ bool BinaryTree::addNewNode(int val)
 	}
 }
 
+int	BinaryTree::getNodeCount()
+{
+	int nodeCount = this->countNode(m_pRootNode);
+	return nodeCount;
+}
+
 int	BinaryTree::getLeafNodeCount()
 {
 	/*清空之前统计的叶子节点个数的缓存								**/
@@ -113,6 +119,18 @@ void BinaryTree::freeTree(BTreeNode_dt** pRootNodeAddr)
 	/*释放当前节点													**/
 	delete* pRootNodeAddr;
 	*pRootNodeAddr = nullptr;
+}
+
+int BinaryTree::countNode(BTreeNode_dt* pRootNode)
+{
+	if (!pRootNode)
+		return 0;
+	else
+	{
+		int leftTreeCount = this->countNode(pRootNode->pLeftNode);
+		int rightTreeCount = this->countNode(pRootNode->pRightNode);
+		return leftTreeCount + rightTreeCount + 1;
+	}
 }
 
 int BinaryTree::countLeafNode(BTreeNode_dt* pRootNode)
@@ -167,12 +185,60 @@ void BinaryTree::foreachTree(BTreeNode_dt* pRootNode, BtreeForach_t type)
 		cout << pRootNode->iData << " ";
 		this->foreachTree(pRootNode->pRightNode, type);
 	}
-	else
+	else if(LAST_SEQ_FOREACH == type)
 	{
 		/*后序遍历: 左右根											**/
 		this->foreachTree(pRootNode->pLeftNode, type);
 		this->foreachTree(pRootNode->pRightNode, type);
 		cout << pRootNode->iData << " ";
+	}
+	else if(NON_RECURSION_FOREACH == type)
+	{
+		/*非递归遍历, 遍历顺序为中序遍历									**/
+		BTreeNode_dt* pCurNode = pRootNode;
+		stack<BTreeNode_dt*> foreachStack;
+		while (pCurNode || !foreachStack.empty())
+		{
+			if (pCurNode)
+			{
+				/*当前节点存入栈, 当前节点修改指向为左孩子节点				**/
+				foreachStack.push(pCurNode);
+				pCurNode = pCurNode->pLeftNode;
+			}
+			else
+			{
+				/*当遍历到叶子节点时进入此流程, 从栈中获取上一个叶子节点	**/
+				pCurNode = foreachStack.top();
+
+				/*打印值, 并弹出当前节点									**/
+				cout << pCurNode->iData << " ";
+				foreachStack.pop();
+
+				/*当前节点指向右孩子节点, 开启下一轮入栈					**/
+				pCurNode = pCurNode->pRightNode;
+			}
+		}
+	}
+	else
+	{
+		/*层次遍历															**/
+		queue<BTreeNode_dt*> foreachQueue;
+		foreachQueue.push(pRootNode);
+		while (!foreachQueue.empty())
+		{
+			/*获取当前节点的信息											**/
+			BTreeNode_dt* pCurNode = foreachQueue.front();
+			cout << pCurNode->iData << " ";
+			foreachQueue.pop();
+
+			/*当前节点的左孩子节点入队										**/
+			if(pCurNode->pLeftNode)
+				foreachQueue.push(pCurNode->pLeftNode);
+
+			/*当前节点右孩子节点入队										**/
+			if(pCurNode->pRightNode)
+				foreachQueue.push(pCurNode->pRightNode);
+		}
 	}
 }
 

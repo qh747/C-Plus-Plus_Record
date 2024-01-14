@@ -9,6 +9,9 @@
 #include "../Algorithms/Algorithm_InnerSort/MergeSort.h"
 #include "../Algorithms/Algorithm_AllocateSort/RadixSort.h"
 #include "../Algorithms/Algorithm_LinearList/LinkListOperate.h"
+#include "../Algorithms/Algorithm_BinarySearch/BinarySearch.h"
+#include "../Algorithms/Algorithm_InsertSearch/InsertSearch.h"
+#include "../Algorithms/Algorithm_BlockSearch/BlockSearch.h"
 
 /*À„∑®≤‚ ‘																	**/
 void algorithmTest();

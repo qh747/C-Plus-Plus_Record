@@ -1,5 +1,5 @@
 #include "AlgorithmTest.h"
-#define ALGTHM_TEST_SEQ  11
+#define ALGTHM_TEST_SEQ  14
 
 /*功能测试											**/
 void algorithmTest()
@@ -47,6 +47,18 @@ void algorithmTest()
 #elif 11 == ALGTHM_TEST_SEQ
 	/*基数排序										**/
 	funcCallRadixSort();
+
+#elif 12 == ALGTHM_TEST_SEQ
+	/*二分查找										**/
+	funcCallBinarySort();
+
+#elif 13 == ALGTHM_TEST_SEQ
+	/*插值查找										**/
+	funcCallInsertSort();
+
+#elif 14 == ALGTHM_TEST_SEQ
+	/*分块查找										**/
+	funcCallBlockSort();
 
 #endif
 }

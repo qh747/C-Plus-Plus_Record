@@ -3,7 +3,7 @@
 #include "DataStructTest.h"
 using namespace std;
 
-#define TEST_TYPE 2
+#define TEST_TYPE 1
 
 int main()
 {
