@@ -12,6 +12,8 @@
 #include "../Algorithms/Algorithm_BinarySearch/BinarySearch.h"
 #include "../Algorithms/Algorithm_InsertSearch/InsertSearch.h"
 #include "../Algorithms/Algorithm_BlockSearch/BlockSearch.h"
+#include "../Algorithms/Algorithm_BinarySortTree/BinarySortTreeSearch.h"
+#include "../Algorithms/Algorithm_BinaryBalanceSortTree/BinaryBalanceTreeSearch.h"
 
 /*À„∑®≤‚ ‘																	**/
 void algorithmTest();

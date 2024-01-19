@@ -127,15 +127,6 @@
     <Filter Include="Algorithm\Algorithm_Search">
       <UniqueIdentifier>{641e232e-cd78-4adb-8487-91dd4f4feaf6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySearch">
-      <UniqueIdentifier>{7ffd2e76-85a3-4173-8097-bed4fe588ca3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySearch\Header Files">
-      <UniqueIdentifier>{31a450fa-99ea-437a-bc1a-8dc23d1d04b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySearch\Source Files">
-      <UniqueIdentifier>{e424031a-0ca4-4633-a4ec-25ea1eabe85b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Algorithm\Algorithm_Search\Algorithm_InsertSearch">
       <UniqueIdentifier>{eadea76a-7cfe-486f-b3ce-33a1f473f0f9}</UniqueIdentifier>
     </Filter>
@@ -153,6 +144,33 @@
     </Filter>
     <Filter Include="Algorithm\Algorithm_Search\Algorithm_BlockSearch\Source Files">
       <UniqueIdentifier>{0f9241c5-6e8b-4642-b3c2-9b4677b8e925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch">
+      <UniqueIdentifier>{96c6f956-0f35-4a4a-b9d5-b8a871da8b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch\Header Files">
+      <UniqueIdentifier>{5b3680ee-8d5d-49c3-af28-13125a4066ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch\Source Files">
+      <UniqueIdentifier>{0bc74663-6c32-4491-9c96-d849ae9ae433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySearch">
+      <UniqueIdentifier>{7ffd2e76-85a3-4173-8097-bed4fe588ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySearch\Header Files">
+      <UniqueIdentifier>{31a450fa-99ea-437a-bc1a-8dc23d1d04b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySearch\Source Files">
+      <UniqueIdentifier>{e424031a-0ca4-4633-a4ec-25ea1eabe85b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySortTreeSearch">
+      <UniqueIdentifier>{f27155ee-68d9-42ec-b518-ff87ec7e60ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySortTreeSearch\Header Files">
+      <UniqueIdentifier>{512c0d68-35c4-4864-aa57-4f523a63e95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySortTreeSearch\Source Files">
+      <UniqueIdentifier>{47a7ad7c-d6b0-43d8-90e9-d6dcf5d07e58}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -219,7 +237,7 @@
     <ClCompile Include="DataStructure\DataStruct_Queue\SequenceQueue.cpp">
       <Filter>DataStructure\DataStruct_Queue\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms\Algorithm_BinarySearch\BinarySort.cpp">
+    <ClCompile Include="Algorithms\Algorithm_BinarySearch\BinarySearch.cpp">
       <Filter>Algorithm\Algorithm_Search\Algorithm_BinarySearch\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Algorithms\Algorithm_InsertSearch\InsertSearch.cpp">
@@ -227,6 +245,12 @@
     </ClCompile>
     <ClCompile Include="Algorithms\Algorithm_BlockSearch\BlockSearch.cpp">
       <Filter>Algorithm\Algorithm_Search\Algorithm_BlockSearch\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_BinarySortTree\BinarySortTreeSearch.cpp">
+      <Filter>Algorithm\Algorithm_Search\Algorithm_BinarySortTreeSearch\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_BinaryBalanceSortTree\BinaryBalanceTreeSearch.cpp">
+      <Filter>Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -298,6 +322,12 @@
     </ClInclude>
     <ClInclude Include="Algorithms\Algorithm_BlockSearch\BlockSearch.h">
       <Filter>Algorithm\Algorithm_Search\Algorithm_BlockSearch\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_BinarySortTree\BinarySortTreeSearch.h">
+      <Filter>Algorithm\Algorithm_Search\Algorithm_BinarySortTreeSearch\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_BinaryBalanceSortTree\BinaryBalanceTreeSearch.h">
+      <Filter>Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
