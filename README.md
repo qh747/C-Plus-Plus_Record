@@ -6,6 +6,3 @@
  
 2.C++_LinuxCode
   存放ubuntu环境下的C++练习代码
-  
-3.C++_OneNote
-  存放C++代码笔记，OntNote格式
