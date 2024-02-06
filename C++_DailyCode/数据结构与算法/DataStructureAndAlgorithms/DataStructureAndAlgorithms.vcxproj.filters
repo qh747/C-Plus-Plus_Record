@@ -172,6 +172,12 @@
     <Filter Include="Algorithm\Algorithm_Search\Algorithm_BinarySortTreeSearch\Source Files">
       <UniqueIdentifier>{47a7ad7c-d6b0-43d8-90e9-d6dcf5d07e58}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AlgorithmPractice">
+      <UniqueIdentifier>{2fcdf35d-5b3e-4c42-ae6e-f471f7568b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AlgorithmPractice\GreedyAlgorithmPractice">
+      <UniqueIdentifier>{6ce1f66a-68b6-4893-b8b6-4234e970a40c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms\Algorithm_SwitchSort\BubbleSort.cpp">
@@ -252,6 +258,15 @@
     <ClCompile Include="Algorithms\Algorithm_BinaryBalanceSortTree\BinaryBalanceTreeSearch.cpp">
       <Filter>Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AlgorithmPractice\AssignCookies.cpp">
+      <Filter>AlgorithmPractice\GreedyAlgorithmPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFiles\AlgorithmPracticeTest.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgorithmPractice\AssignCandy.cpp">
+      <Filter>AlgorithmPractice\GreedyAlgorithmPractice</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
@@ -328,6 +343,12 @@
     </ClInclude>
     <ClInclude Include="Algorithms\Algorithm_BinaryBalanceSortTree\BinaryBalanceTreeSearch.h">
       <Filter>Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgorithmPractice\PublicHeaders.h">
+      <Filter>AlgorithmPractice\GreedyAlgorithmPractice</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFiles\AlgorithmPracticeTest.h">
+      <Filter>Main\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

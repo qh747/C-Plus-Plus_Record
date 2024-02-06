@@ -1,9 +1,10 @@
 #include  <iostream>
 #include "AlgorithmTest.h"
 #include "DataStructTest.h"
+#include "AlgorithmPracticeTest.h"
 using namespace std;
 
-#define TEST_TYPE 1
+#define TEST_TYPE 3
 
 int main()
 {
@@ -12,12 +13,15 @@ int main()
 	/*算法测试									**/
 	algorithmTest();
 
-#endif 
-
-#if 2 == TEST_TYPE
+#elif 2 == TEST_TYPE
 
 	/*数据结构测试								**/
 	dataStructTest();
+
+#elif 3 == TEST_TYPE
+
+	/*算法练习测试								**/
+	algorithmPracticeTest();
 
 #endif 
 
