@@ -76,11 +76,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\include\rabbitmq-c;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\include\win32;D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\include;D:\Windows Kits\10\Include\10.0.18362.0\shared\netcx\shared\1.0\net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Code\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\include\rabbitmq-c;D:\Code\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\include\win32;D:\Code\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\include;D:\Windows Kits\10\Include\10.0.18362.0\shared\netcx\shared\1.0\net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>D:\Code\VsC++2022File\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\lib\rabbitmq.4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Code\C-Plus-Plus_Record\C++_DailyCode\RabbitMQ测试\lib_rabbitmq_vs2017_win32\lib\rabbitmq.4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

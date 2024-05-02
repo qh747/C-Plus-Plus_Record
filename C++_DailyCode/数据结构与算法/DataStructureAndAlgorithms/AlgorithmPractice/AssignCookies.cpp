@@ -1,4 +1,4 @@
-#include "PublicHeaders.h"
+#include "GreedyAlgorithmHeaders.h"
 
 /*饼干分配问题							**/
 void funcTestAssignCookies()

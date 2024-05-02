@@ -6,7 +6,6 @@ int GLOBAL_PUBLISH_THREAD_RESULT = 0;
 /*接收者线程返回值    **/
 int GLOBAL_CONSUME_THREAD_RESULT = 0;
 
-
 void simpleModeFunc()
 {
 	printf("************** RABBITMQ SIMPLE MODE FUNC START *************\n\n");
@@ -49,8 +48,8 @@ int simpleMode_PublishThreadFunc()
 	}
 
 	/*打开与RabbitMQ Server通信的socket    **/
-	string hostName = "192.168.0.188";
-	int port = 5672;
+	string hostName = RabbitmqServer::sServerIpAddr;
+	int port = RabbitmqServer::iServerPort;
 	int openSockRet = amqp_socket_open(pSocket, hostName.c_str(), port);
 	if (AMQP_STATUS_OK != openSockRet)
 	{
@@ -127,8 +126,8 @@ int simpleMode_ConsumeThreadFunc()
 	}
 
 	/*打开与RabbitMQ通信的连接    **/
-	string hostName = "192.168.0.188";
-	int port = 5672;
+	string hostName = RabbitmqServer::sServerIpAddr;
+	int port = RabbitmqServer::iServerPort;
 
 	int openRet = amqp_socket_open(pSocket, hostName.c_str(), port);
 	if (AMQP_STATUS_OK != openRet)

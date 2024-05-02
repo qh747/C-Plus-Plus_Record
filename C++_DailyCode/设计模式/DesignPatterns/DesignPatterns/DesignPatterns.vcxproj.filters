@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="主程序">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="创建型设计模式">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="创建型设计模式\工厂模式">
+      <UniqueIdentifier>{dc14e9d4-dbf0-43a4-b32c-0f67d190a681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\工厂模式\资源对象">
+      <UniqueIdentifier>{2fe6f836-1e22-41f7-8e4c-7b8ae5dff8cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\工厂模式\简单工厂模式">
+      <UniqueIdentifier>{81085bd7-f15a-4b6e-80c0-4bec2703797d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\工厂模式\工厂方法模式">
+      <UniqueIdentifier>{a656bb86-f49f-473b-b23b-14fc058f3742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\工厂模式\抽象工厂模式">
+      <UniqueIdentifier>{55197608-781d-416f-93be-edde2f8f926b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\单例模式">
+      <UniqueIdentifier>{bf39d75a-d37c-4ad1-9586-7223380af60f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\单例模式\饿汉式单例模式">
+      <UniqueIdentifier>{28fb6275-079e-4d14-b6f7-15eb9b148373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\单例模式\懒汉式单例模式">
+      <UniqueIdentifier>{48b7d3ac-5ba4-400d-846a-9494d240b058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\单例模式\多线程单例模式">
+      <UniqueIdentifier>{254550a1-7c2d-4625-9382-550bcb8aed66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\构建器模式">
+      <UniqueIdentifier>{c203fa76-4400-4d09-9491-08a005b61390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型设计模式\原型模式">
+      <UniqueIdentifier>{61e10c0a-f592-4ef6-8f93-03fc2836a796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式">
+      <UniqueIdentifier>{f0c21987-b5fa-49f6-8f59-d98490b0937f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式\适配器模式">
+      <UniqueIdentifier>{1ce524ed-ef6e-459f-afee-0be9187f2b2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式\外观模式">
+      <UniqueIdentifier>{757d0442-f749-4722-b6fd-d18aecc2c9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式\享元模式">
+      <UniqueIdentifier>{194d59ed-9759-44ac-9f58-c8d5b3551523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式\代理模式">
+      <UniqueIdentifier>{7f3c6979-ec8f-45f9-8f0b-bb2e00e1abda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式\装饰器模式">
+      <UniqueIdentifier>{03f1cc50-7f15-4052-84d0-2440fc0beb47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式\组合模式">
+      <UniqueIdentifier>{e5b1e0c0-770d-4985-8ffa-e6d720bcaa7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型设计模式\桥接模式">
+      <UniqueIdentifier>{ea4b9b56-dbce-4859-a240-528c9ab47d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式">
+      <UniqueIdentifier>{438ea6df-e82f-4b9f-976b-9c86bbc9e768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\模板方法模式">
+      <UniqueIdentifier>{092c5e57-c9b2-4b14-8ee1-766ad481a0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\策略模式">
+      <UniqueIdentifier>{7a3c8473-128a-4891-8350-8537e88d69b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\观察者模式">
+      <UniqueIdentifier>{f0f5f020-be51-473c-a59a-ae9893bc9141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\命令模式">
+      <UniqueIdentifier>{fe938e6b-4a2a-4871-a0d7-22f5cf01ffb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面向对象设计原则">
+      <UniqueIdentifier>{89dfb298-f393-4d9c-a0d0-571c2e154586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面向对象设计原则\开闭原则">
+      <UniqueIdentifier>{052c8c03-acb6-4f10-a51e-3438f90a7972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面向对象设计原则\迪米特法则">
+      <UniqueIdentifier>{03d9485c-3918-4ca9-bab6-f3864e79e2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面向对象设计原则\合成复用原则">
+      <UniqueIdentifier>{4c7818b2-6b84-4a5c-813b-2aa5933cdd52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面向对象设计原则\依赖倒转原则">
+      <UniqueIdentifier>{10076e35-c7a7-45ca-86de-b47fa326dd18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\责任链模式">
+      <UniqueIdentifier>{7748c45d-5853-4080-b9f7-3e8fe7f7d5a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\备忘录模式">
+      <UniqueIdentifier>{ed962fe6-66dd-407a-8e80-ff0db13518b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\中介者模式">
+      <UniqueIdentifier>{6af955d0-6af2-441e-b469-f564af67462c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\状态模式">
+      <UniqueIdentifier>{d15dfeb4-af52-4a21-825d-5bd183cc11c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\解释器模式">
+      <UniqueIdentifier>{ec2cc76f-5472-4b6e-ab68-b304b762a64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为型设计模式\访问者模式">
+      <UniqueIdentifier>{e6858ca2-ba0d-4ce7-acb8-fc7f98680110}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>主程序</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\SimpleFactory.cpp">
+      <Filter>创建型设计模式\工厂模式\简单工厂模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\FactoryMethod.cpp">
+      <Filter>创建型设计模式\工厂模式\工厂方法模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\AbstractFactory.cpp">
+      <Filter>创建型设计模式\工厂模式\抽象工厂模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\LazySingleton.cpp">
+      <Filter>创建型设计模式\单例模式\懒汉式单例模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\HungrySingleton.cpp">
+      <Filter>创建型设计模式\单例模式\饿汉式单例模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\ThreadSingleton.cpp">
+      <Filter>创建型设计模式\单例模式\多线程单例模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\Builder.cpp">
+      <Filter>创建型设计模式\构建器模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CreateType\ProtoType.cpp">
+      <Filter>创建型设计模式\原型模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StructuralType\ObjAdapter.cpp">
+      <Filter>结构型设计模式\适配器模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StructuralType\Facade.cpp">
+      <Filter>结构型设计模式\外观模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StructuralType\ShareElement.cpp">
+      <Filter>结构型设计模式\享元模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StructuralType\Proxy.cpp">
+      <Filter>结构型设计模式\代理模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StructuralType\Decorator.cpp">
+      <Filter>结构型设计模式\装饰器模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StructuralType\Component.cpp">
+      <Filter>结构型设计模式\组合模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StructuralType\Bridging.cpp">
+      <Filter>结构型设计模式\桥接模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\TemplateMethod.cpp">
+      <Filter>行为型设计模式\模板方法模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\Strategy.cpp">
+      <Filter>行为型设计模式\策略模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\Observer.cpp">
+      <Filter>行为型设计模式\观察者模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\Command.cpp">
+      <Filter>行为型设计模式\命令模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ObjectPrinciple\OpenClosePrinciple.cpp">
+      <Filter>面向对象设计原则\开闭原则</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ObjectPrinciple\DMTPrinciple.cpp">
+      <Filter>面向对象设计原则\迪米特法则</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ObjectPrinciple\SyncMultipPrinciple.cpp">
+      <Filter>面向对象设计原则\合成复用原则</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ObjectPrinciple\RelyInersionPrinciple.cpp">
+      <Filter>面向对象设计原则\依赖倒转原则</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\ResponsibilityChain.cpp">
+      <Filter>行为型设计模式\责任链模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\Memento.cpp">
+      <Filter>行为型设计模式\备忘录模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\Mediator.cpp">
+      <Filter>行为型设计模式\中介者模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\StateMode.cpp">
+      <Filter>行为型设计模式\状态模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\interpreter.cpp">
+      <Filter>行为型设计模式\解释器模式</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BehavioralType\VistorMode.cpp">
+      <Filter>行为型设计模式\访问者模式</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CreateType\CreateElement.h">
+      <Filter>创建型设计模式\工厂模式\资源对象</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\SimpleFactory.h">
+      <Filter>创建型设计模式\工厂模式\简单工厂模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\FactoryMethod.h">
+      <Filter>创建型设计模式\工厂模式\工厂方法模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\AbstractFactory.h">
+      <Filter>创建型设计模式\工厂模式\抽象工厂模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\LazySingleton.h">
+      <Filter>创建型设计模式\单例模式\懒汉式单例模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\HungrySingleton.h">
+      <Filter>创建型设计模式\单例模式\饿汉式单例模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\ThreadSingleton.h">
+      <Filter>创建型设计模式\单例模式\多线程单例模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\Builder.h">
+      <Filter>创建型设计模式\构建器模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreateType\ProtoType.h">
+      <Filter>创建型设计模式\原型模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StructuralType\ObjAdapter.h">
+      <Filter>结构型设计模式\适配器模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StructuralType\Facade.h">
+      <Filter>结构型设计模式\外观模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StructuralType\ShareElement.h">
+      <Filter>结构型设计模式\享元模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StructuralType\Proxy.h">
+      <Filter>结构型设计模式\代理模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StructuralType\Decorator.h">
+      <Filter>结构型设计模式\装饰器模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StructuralType\Component.h">
+      <Filter>结构型设计模式\组合模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StructuralType\Bridging.h">
+      <Filter>结构型设计模式\桥接模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\TemplateMethod.h">
+      <Filter>行为型设计模式\模板方法模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\Strategy.h">
+      <Filter>行为型设计模式\策略模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\Observer.h">
+      <Filter>行为型设计模式\观察者模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\Command.h">
+      <Filter>行为型设计模式\命令模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ObjectPrinciple\OpenClosePrinciple.h">
+      <Filter>面向对象设计原则\开闭原则</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ObjectPrinciple\DMTPrinciple.h">
+      <Filter>面向对象设计原则\迪米特法则</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ObjectPrinciple\SyncMultipPrinciple.h">
+      <Filter>面向对象设计原则\合成复用原则</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ObjectPrinciple\RelyInersionPrinciple.h">
+      <Filter>面向对象设计原则\依赖倒转原则</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\ResponsibilityChain.h">
+      <Filter>行为型设计模式\责任链模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\Memento.h">
+      <Filter>行为型设计模式\备忘录模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\Mediator.h">
+      <Filter>行为型设计模式\中介者模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\StateMode.h">
+      <Filter>行为型设计模式\状态模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\Interpreter.h">
+      <Filter>行为型设计模式\解释器模式</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BehavioralType\VistorMode.h">
+      <Filter>行为型设计模式\访问者模式</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

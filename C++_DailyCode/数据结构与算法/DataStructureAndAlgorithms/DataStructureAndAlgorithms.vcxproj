@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="AlgorithmPractice\AssignCandy.cpp" />
     <ClCompile Include="AlgorithmPractice\AssignCookies.cpp" />
+    <ClCompile Include="AlgorithmPractice\IntervalOverlap.cpp" />
     <ClCompile Include="Algorithms\Algorithm_AllocateSort\RadixSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_BinaryBalanceSortTree\BinaryBalanceTreeSearch.cpp" />
     <ClCompile Include="Algorithms\Algorithm_BinarySearch\BinarySearch.cpp" />
@@ -158,7 +159,7 @@
     <ClCompile Include="MainFiles\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AlgorithmPractice\PublicHeaders.h" />
+    <ClInclude Include="AlgorithmPractice\GreedyAlgorithmHeaders.h" />
     <ClInclude Include="Algorithms\Algorithm_AllocateSort\RadixSort.h" />
     <ClInclude Include="Algorithms\Algorithm_BinaryBalanceSortTree\BinaryBalanceTreeSearch.h" />
     <ClInclude Include="Algorithms\Algorithm_BinarySearch\BinarySearch.h" />

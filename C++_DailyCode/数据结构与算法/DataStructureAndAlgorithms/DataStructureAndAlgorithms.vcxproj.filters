@@ -267,6 +267,9 @@
     <ClCompile Include="AlgorithmPractice\AssignCandy.cpp">
       <Filter>AlgorithmPractice\GreedyAlgorithmPractice</Filter>
     </ClCompile>
+    <ClCompile Include="AlgorithmPractice\IntervalOverlap.cpp">
+      <Filter>AlgorithmPractice\GreedyAlgorithmPractice</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
@@ -344,7 +347,7 @@
     <ClInclude Include="Algorithms\Algorithm_BinaryBalanceSortTree\BinaryBalanceTreeSearch.h">
       <Filter>Algorithm\Algorithm_Search\Algorithm_BinaryBalanceTreeSearch\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AlgorithmPractice\PublicHeaders.h">
+    <ClInclude Include="AlgorithmPractice\GreedyAlgorithmHeaders.h">
       <Filter>AlgorithmPractice\GreedyAlgorithmPractice</Filter>
     </ClInclude>
     <ClInclude Include="MainFiles\AlgorithmPracticeTest.h">

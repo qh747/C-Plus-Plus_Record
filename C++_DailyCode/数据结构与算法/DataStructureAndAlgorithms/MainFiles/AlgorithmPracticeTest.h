@@ -1,5 +1,5 @@
 #pragma once
-#include "../AlgorithmPractice/PublicHeaders.h"
+#include "../AlgorithmPractice/GreedyAlgorithmHeaders.h"
 
 /*À„∑®¡∑œ∞≤‚ ‘															**/
 void algorithmPracticeTest();

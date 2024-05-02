@@ -1,3 +1,0 @@
-﻿  main.cpp
-D:\Code\VsC++2022File\20220830\main.cpp(81,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  20220830.vcxproj -> D:\Code\VsC++2022File\20220830\x64\Debug\20220830.exe

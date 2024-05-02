@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D1E333E2-187B-4BDD-9D53-EE084CF57A1E}</ProjectGuid>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BehavioralType\Command.cpp" />
+    <ClCompile Include="..\BehavioralType\interpreter.cpp" />
+    <ClCompile Include="..\BehavioralType\Mediator.cpp" />
+    <ClCompile Include="..\BehavioralType\Memento.cpp" />
+    <ClCompile Include="..\BehavioralType\Observer.cpp" />
+    <ClCompile Include="..\BehavioralType\ResponsibilityChain.cpp" />
+    <ClCompile Include="..\BehavioralType\StateMode.cpp" />
+    <ClCompile Include="..\BehavioralType\Strategy.cpp" />
+    <ClCompile Include="..\BehavioralType\TemplateMethod.cpp" />
+    <ClCompile Include="..\BehavioralType\VistorMode.cpp" />
+    <ClCompile Include="..\CreateType\AbstractFactory.cpp" />
+    <ClCompile Include="..\CreateType\Builder.cpp" />
+    <ClCompile Include="..\CreateType\FactoryMethod.cpp" />
+    <ClCompile Include="..\CreateType\HungrySingleton.cpp" />
+    <ClCompile Include="..\CreateType\LazySingleton.cpp" />
+    <ClCompile Include="..\CreateType\ProtoType.cpp" />
+    <ClCompile Include="..\CreateType\SimpleFactory.cpp" />
+    <ClCompile Include="..\CreateType\ThreadSingleton.cpp" />
+    <ClCompile Include="..\ObjectPrinciple\DMTPrinciple.cpp" />
+    <ClCompile Include="..\ObjectPrinciple\OpenClosePrinciple.cpp" />
+    <ClCompile Include="..\ObjectPrinciple\RelyInersionPrinciple.cpp" />
+    <ClCompile Include="..\ObjectPrinciple\SyncMultipPrinciple.cpp" />
+    <ClCompile Include="..\StructuralType\Bridging.cpp" />
+    <ClCompile Include="..\StructuralType\Component.cpp" />
+    <ClCompile Include="..\StructuralType\Decorator.cpp" />
+    <ClCompile Include="..\StructuralType\Facade.cpp" />
+    <ClCompile Include="..\StructuralType\ObjAdapter.cpp" />
+    <ClCompile Include="..\StructuralType\Proxy.cpp" />
+    <ClCompile Include="..\StructuralType\ShareElement.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BehavioralType\Command.h" />
+    <ClInclude Include="..\BehavioralType\Interpreter.h" />
+    <ClInclude Include="..\BehavioralType\Mediator.h" />
+    <ClInclude Include="..\BehavioralType\Memento.h" />
+    <ClInclude Include="..\BehavioralType\Observer.h" />
+    <ClInclude Include="..\BehavioralType\ResponsibilityChain.h" />
+    <ClInclude Include="..\BehavioralType\StateMode.h" />
+    <ClInclude Include="..\BehavioralType\Strategy.h" />
+    <ClInclude Include="..\BehavioralType\TemplateMethod.h" />
+    <ClInclude Include="..\BehavioralType\VistorMode.h" />
+    <ClInclude Include="..\CreateType\AbstractFactory.h" />
+    <ClInclude Include="..\CreateType\Builder.h" />
+    <ClInclude Include="..\CreateType\CreateElement.h" />
+    <ClInclude Include="..\CreateType\FactoryMethod.h" />
+    <ClInclude Include="..\CreateType\HungrySingleton.h" />
+    <ClInclude Include="..\CreateType\LazySingleton.h" />
+    <ClInclude Include="..\CreateType\ProtoType.h" />
+    <ClInclude Include="..\CreateType\SimpleFactory.h" />
+    <ClInclude Include="..\CreateType\ThreadSingleton.h" />
+    <ClInclude Include="..\ObjectPrinciple\DMTPrinciple.h" />
+    <ClInclude Include="..\ObjectPrinciple\OpenClosePrinciple.h" />
+    <ClInclude Include="..\ObjectPrinciple\RelyInersionPrinciple.h" />
+    <ClInclude Include="..\ObjectPrinciple\SyncMultipPrinciple.h" />
+    <ClInclude Include="..\StructuralType\Bridging.h" />
+    <ClInclude Include="..\StructuralType\Component.h" />
+    <ClInclude Include="..\StructuralType\Decorator.h" />
+    <ClInclude Include="..\StructuralType\Facade.h" />
+    <ClInclude Include="..\StructuralType\ObjAdapter.h" />
+    <ClInclude Include="..\StructuralType\Proxy.h" />
+    <ClInclude Include="..\StructuralType\ShareElement.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

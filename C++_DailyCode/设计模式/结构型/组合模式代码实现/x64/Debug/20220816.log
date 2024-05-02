@@ -1,4 +1,0 @@
-﻿  main.cpp
-D:\Code\VsC++2022File\20220816\main.cpp(118): warning C4715: “BranchComposite::getChild”: 不是所有的控件路径都返回值
-D:\Code\VsC++2022File\20220816\main.cpp(80): warning C4715: “BranchComposite::removeChild”: 不是所有的控件路径都返回值
-  20220816.vcxproj -> D:\Code\VsC++2022File\20220816\x64\Debug\20220816.exe

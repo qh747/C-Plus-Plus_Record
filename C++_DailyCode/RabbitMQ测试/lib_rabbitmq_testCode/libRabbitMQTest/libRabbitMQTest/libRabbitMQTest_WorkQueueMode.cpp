@@ -57,7 +57,9 @@ int workQueueMode_PublishThreadFunc()
 	}
 
 	/*打开与RabbitMQ Server通信的socket    **/
-	int openSocketRet = amqp_socket_open(pSocket, "192.168.0.188", 5672);
+	string hostName = RabbitmqServer::sServerIpAddr;
+	int port = RabbitmqServer::iServerPort;
+	int openSocketRet = amqp_socket_open(pSocket, hostName.c_str(), port);
 	if (AMQP_STATUS_OK != openSocketRet)
 	{
 		WORK_QUEUE_MODE_PUBLISH_THREAD_RESULT = -1;
@@ -137,7 +139,9 @@ int workQueueMode_ConsumeThreadFunc()
 	}
 
 	/*打开与RabbitMQ Server通信的socket    **/
-	int openSocketRet = amqp_socket_open(pSocket, "192.168.0.188", 5672);
+	string hostName = RabbitmqServer::sServerIpAddr;
+	int port = RabbitmqServer::iServerPort;
+	int openSocketRet = amqp_socket_open(pSocket, hostName.c_str(), port);
 	if (AMQP_STATUS_OK != openSocketRet)
 	{
 		WORK_QUEUE_MODE_CONSUME_THREAD_RESULT_lock.lock();

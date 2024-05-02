@@ -13,6 +13,14 @@
 #include "amqp_tcp_socket.h"
 using namespace std;
 
+// rabbitmq server IP地址
+namespace RabbitmqServer
+{
+	const static char* sServerIpAddr = "192.168.3.16";
+	const static int   iServerPort = 5672;
+};
+
+
 /*简单模式    **/
 void simpleModeFunc();					
 int  simpleMode_PublishThreadFunc();	
@@ -26,8 +34,7 @@ int  workQueueMode_ConsumeThreadFunc();
 /*发布/订阅模式    **/
 void pubAndSubModeFunc();
 int  pubAndSubMode_PublishThreadFunc();
-int  pubAndSubMode_ConsumeThreadFunc();
-int  pubAndSubMode_SecondConsumeThreadFunc();
+int  pubAndSubMode_ConsumeThreadFunc(const string& queueName);
 
 /*路由模式    **/
 void routeModeFunc();
@@ -46,8 +53,3 @@ int  topicMode_SecondConsumeThreadFunc();
 void rpcModeFunc();
 int  rpcMode_ClientThreadFunc();
 int  rpcMode_serverThreadFunc();
-<<<<<<< HEAD
-
-=======
-void rpcMode_showMessageContent(void const *buffer, size_t len);
->>>>>>> ad75c7c858e82ef7169d6faf97807c773f5cd7aa
