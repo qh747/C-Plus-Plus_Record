@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ProtoBufMessage">
+      <UniqueIdentifier>{233dc39e-d8fc-4ebd-b9fd-5bfd2a51d726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufMessage\MyMessage">
+      <UniqueIdentifier>{db00024b-0808-4b0e-aa50-933f51988292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufTest">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="ProtoBufTest\MyMessageTest">
+      <UniqueIdentifier>{50bc1920-39a4-4ed6-9346-2fad0d6168d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufMessage\MyEnumMsg">
+      <UniqueIdentifier>{8505f917-9c08-4ad1-bf1a-5a65ebdb2d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufTest\MyEnumMsgTest">
+      <UniqueIdentifier>{721631d7-2ca0-4fbe-8b69-c732adfb4ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufMessage\MyImportInfo">
+      <UniqueIdentifier>{1c62a2dd-f4b7-415e-8348-28da32d4649b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufTest\MyImportInfoTest">
+      <UniqueIdentifier>{964f57f4-e489-4238-aab3-1f24c210bef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufMessage\MyImportPkg">
+      <UniqueIdentifier>{fd88f163-c3fc-4b01-bd34-95aaaaf5b7f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoBufTest\MyImportPkgTest">
+      <UniqueIdentifier>{c809a220-e482-4200-89e6-aad2797169c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file_proto\myMessage.pb.cc">
+      <Filter>ProtoBufMessage\MyMessage</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMessageTest.cpp">
+      <Filter>ProtoBufTest\MyMessageTest</Filter>
+    </ClCompile>
+    <ClCompile Include="file_proto\myEnum.pb.cc">
+      <Filter>ProtoBufMessage\MyEnumMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEnumMsgTest.cpp">
+      <Filter>ProtoBufTest\MyEnumMsgTest</Filter>
+    </ClCompile>
+    <ClCompile Include="file_proto\myImportInfo.pb.cc">
+      <Filter>ProtoBufMessage\MyImportInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="file_proto\myInfo.pb.cc">
+      <Filter>ProtoBufMessage\MyImportInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="MyImportInfoTest.cpp">
+      <Filter>ProtoBufTest\MyImportInfoTest</Filter>
+    </ClCompile>
+    <ClCompile Include="file_proto\myImportPkg.pb.cc">
+      <Filter>ProtoBufMessage\MyImportPkg</Filter>
+    </ClCompile>
+    <ClCompile Include="file_proto\myPkg.pb.cc">
+      <Filter>ProtoBufMessage\MyImportPkg</Filter>
+    </ClCompile>
+    <ClCompile Include="MyImportPkgTest.cpp">
+      <Filter>ProtoBufTest\MyImportPkgTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="file_proto\myMessage.pb.h">
+      <Filter>ProtoBufMessage\MyMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMessageTest.h">
+      <Filter>ProtoBufTest\MyMessageTest</Filter>
+    </ClInclude>
+    <ClInclude Include="file_proto\myEnum.pb.h">
+      <Filter>ProtoBufMessage\MyEnumMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEnumMsgTest.h">
+      <Filter>ProtoBufTest\MyEnumMsgTest</Filter>
+    </ClInclude>
+    <ClInclude Include="file_proto\myImportInfo.pb.h">
+      <Filter>ProtoBufMessage\MyImportInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="file_proto\myInfo.pb.h">
+      <Filter>ProtoBufMessage\MyImportInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="MyImportInfoTest.h">
+      <Filter>ProtoBufTest\MyImportInfoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="file_proto\myImportPkg.pb.h">
+      <Filter>ProtoBufMessage\MyImportPkg</Filter>
+    </ClInclude>
+    <ClInclude Include="file_proto\myPkg.pb.h">
+      <Filter>ProtoBufMessage\MyImportPkg</Filter>
+    </ClInclude>
+    <ClInclude Include="MyImportPkgTest.h">
+      <Filter>ProtoBufTest\MyImportPkgTest</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="file_proto\myEnum.proto">
+      <Filter>ProtoBufMessage\MyEnumMsg</Filter>
+    </None>
+    <None Include="file_proto\myMessage.proto">
+      <Filter>ProtoBufMessage\MyMessage</Filter>
+    </None>
+    <None Include="file_proto\myImportInfo.proto">
+      <Filter>ProtoBufMessage\MyImportInfo</Filter>
+    </None>
+    <None Include="file_proto\myInfo.proto">
+      <Filter>ProtoBufMessage\MyImportInfo</Filter>
+    </None>
+    <None Include="file_proto\myImportPkg.proto">
+      <Filter>ProtoBufMessage\MyImportPkg</Filter>
+    </None>
+    <None Include="file_proto\myPkg.proto">
+      <Filter>ProtoBufMessage\MyImportPkg</Filter>
+    </None>
+  </ItemGroup>
+</Project>

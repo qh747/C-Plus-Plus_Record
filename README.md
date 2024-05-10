@@ -1,8 +1,25 @@
-# C-Plus-Plus_Record
-记录C++笔记
+# 工程名称
+  C-Plus-Plus_Record
 
-1.C++_DailyCode
-  存放windows环境下的C++练习代码
- 
-2.C++_LinuxCode
-  存放ubuntu环境下的C++练习代码
+# 目的
+  记录C++笔记
+
+# 目录结构
+  /.gitignore
+  /README.md
+  /C++_WindowsCode
+      /Boost测试
+      /OpenSSL测试
+      /ProtoBuf测试
+      /RabbitMQ测试
+      /WinPcap测试
+      /共享内存测试
+      /设计模式
+      /数据结构与算法
+  /C++_LinuxCode 
+      /HTTP服务端
+      /MYSQL
+      /TCP服务端
+      /UDP服务端
+      /本地套接字
+      /线程池

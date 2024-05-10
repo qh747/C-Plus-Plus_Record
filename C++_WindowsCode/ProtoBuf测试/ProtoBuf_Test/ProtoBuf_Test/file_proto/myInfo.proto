@@ -1,0 +1,7 @@
+syntax = "proto3";                      // 声明版本为proto3
+
+message MyInfo                          // 声明类的名称为MyInfo
+{
+    string          name  = 1;          // 声明int类型的name成员变量
+    int32           age   = 2;          // 声明int类型的age成员变量
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";                      // 声明版本为proto3
+
+message MyMessage                       // 声明类的名称为MyMessage
+{
+    int32           name  = 1;          // 声明int类型的name成员变量
+    int32           age   = 2;          // 声明int类型的age成员变量
+    bool            sex   = 3;          // 声明bool类型的sex成员变量
+    string          info  = 4;          // 声明string类型的info成员变量
+    repeated int32  phone = 5;          // 声明int数组类型的phone成员变量
+}

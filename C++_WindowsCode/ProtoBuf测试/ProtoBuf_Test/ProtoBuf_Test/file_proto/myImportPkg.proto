@@ -1,0 +1,9 @@
+syntax = "proto3";                      // 声明版本为proto3
+import   "myPkg.proto";                 // 导入文件myPkg.proto
+package   package;                      // 声明命名空间package
+
+message MyPackage                       // 声明类的名称为MyInfo
+{
+    string               info   = 1;    // 声明string类型的info成员变量
+    subPackage.MyPackage subPkg = 2;    // 声明subPackage命名空间MyPackage类型的subPkg成员变量
+}

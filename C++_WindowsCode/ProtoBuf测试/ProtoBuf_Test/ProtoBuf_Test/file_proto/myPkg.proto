@@ -1,0 +1,7 @@
+syntax = "proto3";                      // 声明版本为proto3
+package  subPackage;                    // 声明命名空间subPackage
+
+message MyPackage                       // 声明类的名称为MyInfo
+{
+    string  info = 1;                   // 声明string类型的info成员变量
+}

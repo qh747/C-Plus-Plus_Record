@@ -1,0 +1,15 @@
+syntax = "proto3";                      // 声明版本为proto3
+
+enum MyEnum                             // 声明枚举MyEnum
+{
+    ZERO   = 0;                         // 枚举的起始枚举值必须为0
+    FIRST  = 1;
+    SECOND = 2;
+    THIRD  = 3;
+}
+
+message MyEnumMsg                       // 声明类的名称为MyEnumMsg
+{
+    MyEnum    enumVal = 1;              // 声明MyEnum类型的enumVal成员变量
+    string    enumStr = 2;              // 声明string类型的enumStr成员变量
+}

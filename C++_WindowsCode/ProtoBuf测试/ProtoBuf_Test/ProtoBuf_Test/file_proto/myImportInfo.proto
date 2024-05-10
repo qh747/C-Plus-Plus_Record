@@ -1,0 +1,9 @@
+syntax = "proto3";                      // 声明版本为proto3
+
+import "myInfo.proto";                  // 导入myInfo.proto文件
+
+message MyDetailInfo                    // 声明类的名称为MyDetailInfo
+{
+    MyInfo          info     = 1;       // 声明MyInfo类型的info成员变量
+    string          describe = 2;       // 声明string类型的describe成员变量
+}
