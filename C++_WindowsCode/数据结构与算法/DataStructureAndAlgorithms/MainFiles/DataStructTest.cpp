@@ -41,6 +41,11 @@ void dataStructTest()
 
 #elif 8 == DATASTRUCT_TEST_SEQ
 
+	/*单调队列测试															**/
+	funcMonotonicQueueTest();
+
+#elif 9 == DATASTRUCT_TEST_SEQ
+
 	/*二叉树测试															**/
 	funcBinaryTreeTest();
 
@@ -528,6 +533,42 @@ void funcSequenceQueueTest()
 		cout << topVal << " ";
 	}
 	cout << endl << endl;
+}
+
+/*单调队列测试																**/
+void funcMonotonicQueueTest()
+{
+	// 单调递增队列测试
+	BasicMonotonicQueue* pIncrQueue = new IncreaseMonotonicQueue();
+
+	cout << "Push Movement: " << endl;
+	for (int i = 10; i >= 0; --i) {
+		pIncrQueue->push(i);
+		cout << "Current Min Value: " << pIncrQueue->top() << endl;
+	}
+
+	cout << "Pop Movement: " << endl;
+	while (!pIncrQueue->empty()) {
+		cout << "Current Min Value: " << pIncrQueue->top() << endl;
+		pIncrQueue->pop();
+	}
+
+	delete pIncrQueue;
+
+	// 单调递减队列测试
+	pIncrQueue = new DecreaseMonotonicQueue();
+
+	cout << "Push Movement: " << endl;
+	for (int i = 0; i <= 10; ++i) {
+		pIncrQueue->push(i);
+		cout << "Current Max Value: " << pIncrQueue->top() << endl;
+	}
+
+	cout << "Pop Movement: " << endl;
+	while (!pIncrQueue->empty()) {
+		cout << "Current Max Value: " << pIncrQueue->top() << endl;
+		pIncrQueue->pop();
+	}
 }
 
 /*二叉树测试																**/

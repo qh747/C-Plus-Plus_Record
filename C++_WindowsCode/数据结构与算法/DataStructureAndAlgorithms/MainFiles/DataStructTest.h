@@ -7,8 +7,10 @@
 #include "../DataStructure/DataStruct_Stack/SequenceStack.h"
 #include "../DataStructure/DataStruct_Stack/LinkStack.h"
 #include "../DataStructure/DataStruct_Queue/SequenceQueue.h"
+#include "../DataStructure/DataStruct_Queue/MonotonicQueue.h"
 #include "../DataStructure/DataStruct_Tree/BinaryTree.h"
-using namespace std;
+using std::cout;
+using std::endl;
 
 /*数据结构测试																**/
 void dataStructTest();
@@ -33,6 +35,9 @@ void funcLinkStackTest();
 
 /*顺序队列测试																**/
 void funcSequenceQueueTest();
+
+/*单调队列测试																**/
+void funcMonotonicQueueTest();
 
 /*二叉树测试																**/
 void funcBinaryTreeTest();

@@ -270,6 +270,9 @@
     <ClCompile Include="AlgorithmPractice\IntervalOverlap.cpp">
       <Filter>AlgorithmPractice\GreedyAlgorithmPractice</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Queue\MonotonicQueue.cpp">
+      <Filter>DataStructure\DataStruct_Queue\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
@@ -352,6 +355,9 @@
     </ClInclude>
     <ClInclude Include="MainFiles\AlgorithmPracticeTest.h">
       <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Queue\MonotonicQueue.h">
+      <Filter>DataStructure\DataStruct_Queue\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -9,7 +9,7 @@ class SequenceQueue
 public:
 	SequenceQueue()					{ m_maxSize = -1; }
 	SequenceQueue(int stackMaxSize) { m_maxSize = stackMaxSize; }
-	~SequenceQueue()				{ }
+	~SequenceQueue()				{}
 
 public:
 	inline int		size() { return m_stackContainer.size(); }

@@ -4,7 +4,7 @@
 #include "AlgorithmPracticeTest.h"
 using namespace std;
 
-#define TEST_TYPE 3
+#define TEST_TYPE 2
 
 int main()
 {
