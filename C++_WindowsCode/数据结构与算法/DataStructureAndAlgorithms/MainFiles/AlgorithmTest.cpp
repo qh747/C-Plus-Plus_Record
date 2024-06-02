@@ -1,5 +1,5 @@
 #include "AlgorithmTest.h"
-#define ALGTHM_TEST_SEQ  16
+#define ALGTHM_TEST_SEQ  17
 
 /*功能测试											**/
 void algorithmTest()
@@ -67,6 +67,10 @@ void algorithmTest()
 #elif 16 == ALGTHM_TEST_SEQ
 	/*二叉平衡排序树功能测试						**/
 	funcCallBinaryBalanceTreeSearch();
+
+#elif 17 == ALGTHM_TEST_SEQ
+	/*哈希查找										**/
+	funcHashSearch();
 
 #endif
 }

@@ -178,6 +178,15 @@
     <Filter Include="AlgorithmPractice\GreedyAlgorithmPractice">
       <UniqueIdentifier>{6ce1f66a-68b6-4893-b8b6-4234e970a40c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_HashSearch">
+      <UniqueIdentifier>{334210f3-1add-44f5-b0e0-5eaf6ba8de3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_HashSearch\Header Files">
+      <UniqueIdentifier>{47fd930e-2f8a-460f-a410-c5ab6bea105d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Algorithm_Search\Algorithm_HashSearch\Source Files">
+      <UniqueIdentifier>{1ac791c8-e16c-4299-b175-8a2e2b22807b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms\Algorithm_SwitchSort\BubbleSort.cpp">
@@ -273,6 +282,12 @@
     <ClCompile Include="DataStructure\DataStruct_Queue\MonotonicQueue.cpp">
       <Filter>DataStructure\DataStruct_Queue\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructure\DataStruct_Queue\PriorityQueue.cpp">
+      <Filter>DataStructure\DataStruct_Queue\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Algorithm_HashSearch\HashSearch.cpp">
+      <Filter>Algorithm\Algorithm_Search\Algorithm_HashSearch\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\Algorithm_SwitchSort\BubbleSort.h">
@@ -358,6 +373,12 @@
     </ClInclude>
     <ClInclude Include="DataStructure\DataStruct_Queue\MonotonicQueue.h">
       <Filter>DataStructure\DataStruct_Queue\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\DataStruct_Queue\PriorityQueue.h">
+      <Filter>DataStructure\DataStruct_Queue\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithm_HashSearch\HashSearch.h">
+      <Filter>Algorithm\Algorithm_Search\Algorithm_HashSearch\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

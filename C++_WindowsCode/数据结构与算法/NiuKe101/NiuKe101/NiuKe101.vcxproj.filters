@@ -22,6 +22,9 @@
     <Filter Include="堆/栈/队列">
       <UniqueIdentifier>{008bd8d3-5eb7-4dfd-b5cd-b4e8cc48ba56}</UniqueIdentifier>
     </Filter>
+    <Filter Include="哈希">
+      <UniqueIdentifier>{44d84ebb-6ed5-41f8-93b9-5b476d4c2e27}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +42,9 @@
     <ClCompile Include="HeapStackQueue.cpp">
       <Filter>堆/栈/队列</Filter>
     </ClCompile>
+    <ClCompile Include="HashAlg.cpp">
+      <Filter>哈希</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkList.h">
@@ -52,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="HeapStackQueue.h">
       <Filter>堆/栈/队列</Filter>
+    </ClInclude>
+    <ClInclude Include="HashAlg.h">
+      <Filter>哈希</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

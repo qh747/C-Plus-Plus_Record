@@ -137,6 +137,7 @@
     <ClCompile Include="Algorithms\Algorithm_BlockSearch\BlockSearch.cpp" />
     <ClCompile Include="Algorithms\Algorithm_ChooseSort\ChooseSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_ChooseSort\HeapSort.cpp" />
+    <ClCompile Include="Algorithms\Algorithm_HashSearch\HashSearch.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InnerSort\MergeSort.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSearch\InsertSearch.cpp" />
     <ClCompile Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.cpp" />
@@ -150,6 +151,7 @@
     <ClCompile Include="DataStructure\DataStruct_LinkList\DoubleLinkList.cpp" />
     <ClCompile Include="DataStructure\DataStruct_LinkList\SingleLinkList.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Queue\MonotonicQueue.cpp" />
+    <ClCompile Include="DataStructure\DataStruct_Queue\PriorityQueue.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Queue\SequenceQueue.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Stack\LinkStack.cpp" />
     <ClCompile Include="DataStructure\DataStruct_Stack\SequenceStack.cpp" />
@@ -168,6 +170,7 @@
     <ClInclude Include="Algorithms\Algorithm_BlockSearch\BlockSearch.h" />
     <ClInclude Include="Algorithms\Algorithm_ChooseSort\ChooseSort.h" />
     <ClInclude Include="Algorithms\Algorithm_ChooseSort\HeapSort.h" />
+    <ClInclude Include="Algorithms\Algorithm_HashSearch\HashSearch.h" />
     <ClInclude Include="Algorithms\Algorithm_InnerSort\MergeSort.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSearch\InsertSearch.h" />
     <ClInclude Include="Algorithms\Algorithm_InsertSort\BinaryInsertSort.h" />
@@ -181,6 +184,7 @@
     <ClInclude Include="DataStructure\DataStruct_LinkList\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\DataStruct_LinkList\SingleLinkList.h" />
     <ClInclude Include="DataStructure\DataStruct_Queue\MonotonicQueue.h" />
+    <ClInclude Include="DataStructure\DataStruct_Queue\PriorityQueue.h" />
     <ClInclude Include="DataStructure\DataStruct_Queue\SequenceQueue.h" />
     <ClInclude Include="DataStructure\DataStruct_Stack\LinkStack.h" />
     <ClInclude Include="DataStructure\DataStruct_Stack\SequenceStack.h" />

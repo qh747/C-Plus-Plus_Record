@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="HashAlg.cpp" />
     <ClCompile Include="HeapStackQueue.cpp" />
     <ClCompile Include="LinkList.cpp" />
     <ClCompile Include="main.cpp" />
@@ -132,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BinaryTree.h" />
+    <ClInclude Include="HashAlg.h" />
     <ClInclude Include="HeapStackQueue.h" />
     <ClInclude Include="LinkList.h" />
   </ItemGroup>

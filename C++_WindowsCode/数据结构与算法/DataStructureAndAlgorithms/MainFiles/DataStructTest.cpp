@@ -1,5 +1,5 @@
 #include "DataStructTest.h"
-#define DATASTRUCT_TEST_SEQ  8
+#define DATASTRUCT_TEST_SEQ  9
 
 /*数据结构测试																**/
 void dataStructTest()
@@ -45,6 +45,11 @@ void dataStructTest()
 	funcMonotonicQueueTest();
 
 #elif 9 == DATASTRUCT_TEST_SEQ
+
+	/*优先队列测试																**/
+	funcPriorityQueueTest();
+
+#elif 10 == DATASTRUCT_TEST_SEQ
 
 	/*二叉树测试															**/
 	funcBinaryTreeTest();
@@ -552,7 +557,6 @@ void funcMonotonicQueueTest()
 		cout << "Current Min Value: " << pIncrQueue->top() << endl;
 		pIncrQueue->pop();
 	}
-
 	delete pIncrQueue;
 
 	// 单调递减队列测试
@@ -569,6 +573,43 @@ void funcMonotonicQueueTest()
 		cout << "Current Max Value: " << pIncrQueue->top() << endl;
 		pIncrQueue->pop();
 	}
+	delete pIncrQueue;
+}
+
+/*优先队列测试																**/
+void funcPriorityQueueTest()
+{
+	// 单调递增队列测试
+	BasicPriorityQueue* pPriorityQueue = new SmallTopPriorityQueue();
+
+	cout << "Push Movement: " << endl;
+	for (int i = 10; i >= 0; --i) {
+		pPriorityQueue->push(i);
+		cout << "Current Min Value: " << pPriorityQueue->top() << endl;
+	}
+
+	cout << "Pop Movement: " << endl;
+	while (!pPriorityQueue->empty()) {
+		cout << "Current Min Value: " << pPriorityQueue->top() << endl;
+		pPriorityQueue->pop();
+	}
+	delete pPriorityQueue;
+
+	// 单调递减队列测试
+	pPriorityQueue = new BigTopPriorityQueue();
+
+	cout << "Push Movement: " << endl;
+	for (int i = 0; i <= 10; ++i) {
+		pPriorityQueue->push(i);
+		cout << "Current Max Value: " << pPriorityQueue->top() << endl;
+	}
+
+	cout << "Pop Movement: " << endl;
+	while (!pPriorityQueue->empty()) {
+		cout << "Current Max Value: " << pPriorityQueue->top() << endl;
+		pPriorityQueue->pop();
+	}
+	delete pPriorityQueue;
 }
 
 /*二叉树测试																**/

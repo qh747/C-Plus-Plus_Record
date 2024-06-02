@@ -8,6 +8,7 @@
 #include "../DataStructure/DataStruct_Stack/LinkStack.h"
 #include "../DataStructure/DataStruct_Queue/SequenceQueue.h"
 #include "../DataStructure/DataStruct_Queue/MonotonicQueue.h"
+#include "../DataStructure/DataStruct_Queue/PriorityQueue.h"
 #include "../DataStructure/DataStruct_Tree/BinaryTree.h"
 using std::cout;
 using std::endl;
@@ -38,6 +39,9 @@ void funcSequenceQueueTest();
 
 /*单调队列测试																**/
 void funcMonotonicQueueTest();
+
+/*优先队列测试																**/
+void funcPriorityQueueTest();
 
 /*二叉树测试																**/
 void funcBinaryTreeTest();

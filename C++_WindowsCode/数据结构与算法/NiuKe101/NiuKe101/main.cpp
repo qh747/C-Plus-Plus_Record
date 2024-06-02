@@ -2,6 +2,7 @@
 #include "BinarySearch.h"
 #include "BinaryTree.h"
 #include "HeapStackQueue.h"
+#include "HashAlg.h"
 
 // 链表测试函数
 void fundLinkTest() 
@@ -159,7 +160,35 @@ void heapStackQueueTest()
 	// solu.demo();
 
 	// BM3 - 有效括号序列
-	isValid_Solution solu;
+	// isValid_Solution solu;
+	// solu.demo();
+
+	// BM4 - 滑动窗口的最大值
+	// maxInWindows_Solution solu;
+	// solu.demo();
+
+	// BM5 - 最小的K个数
+	// GetLeastNumbers_Solution solu;
+	// solu.demo();
+
+	// BM6 - 寻找第K大
+	// findKth_Solution solu;
+	// solu.demo();
+
+	// BM7 - 数据流的中位数
+	// StreamMid_Solution solu;
+	// solu.demo();
+
+	// BM8 - 表达式求值
+	// ExpressionEvaluation_Solution solu;
+	// solu.demo();
+}
+
+// 哈希测试函数
+void haspTest()
+{
+	// BM2 - 数组中出现次数超过一半的数字
+	MoreThanHalfNum_Solution solu;
 	solu.demo();
 }
 
@@ -175,7 +204,10 @@ int main()
 	// binaryTreeTest();
 
 	// 堆/栈/链表测试函数
-	heapStackQueueTest();
+	// heapStackQueueTest();
+
+	// 哈希测试函数
+	haspTest();
 
 	return 0;
 }
